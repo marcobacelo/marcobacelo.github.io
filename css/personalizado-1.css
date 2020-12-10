@@ -1,0 +1,14 @@
+/* screen - personalizado-1 */
+
+.personalizado-1 {
+  background-color: var(--black);
+  background-image: url(../img/surface-pro-3---3@1x.png);
+  background-size: 100% 100%;
+  height: 990px;
+  position: relative;
+  width: 1440px;
+}
+:root {
+  --black: rgba(0,0,0,0.6);
+  --white: rgba(255,255,255,1.0);
+}

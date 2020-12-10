@@ -1,0 +1,46 @@
+/* screen - personalizado-10 */
+
+.personalizado-10 {
+  align-items: flex-start;
+  background-color: var(--white);
+  background-image: url(../img/surface-pro-3---92@1x.png);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  height: 990px;
+  justify-content: flex-start;
+  min-width: 1440px;
+  padding: 0 18px;
+  position: relative;
+  width: auto;
+}
+.personalizado-10 .retangulo-19-C61RwL {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 130px;
+  margin-left: 264px;
+  margin-top: 834px;
+  position: relative;
+  width: 556px;
+}
+.personalizado-10 .retangulo-22-C61RwL {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 118px;
+  position: relative;
+  width: 118px;
+}
+.personalizado-10 .retangulo-23-C61RwL {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 95px;
+  margin-left: 165px;
+  margin-top: 23px;
+  position: relative;
+  width: 268px;
+}
+:root {
+  --black: rgba(0,0,0,0.6);
+  --white: rgba(255,255,255,1.0);
+}

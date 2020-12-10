@@ -1,0 +1,29 @@
+/* screen - personalizado-15 */
+
+.personalizado-15 {
+  align-items: flex-start;
+  background-color: var(--white);
+  background-image: url(../img/surface-pro-3---136@1x.png);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  height: 990px;
+  justify-content: flex-start;
+  min-width: 1440px;
+  padding: 0 393px;
+  position: relative;
+  width: auto;
+}
+.personalizado-15 .retangulo-20-C61RwL {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 134px;
+  margin-top: 584px;
+  position: relative;
+  width: 653px;
+}
+:root {
+  --black: rgba(0,0,0,0.6);
+  --white: rgba(255,255,255,1.0);
+}
