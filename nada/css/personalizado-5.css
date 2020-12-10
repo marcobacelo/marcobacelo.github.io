@@ -1,0 +1,69 @@
+/* screen - personalizado-5 */
+
+.personalizado-5 {
+  align-items: flex-start;
+  background-color: var(--white);
+  background-image: url(../img/surface-pro-3---15-1@1x.png);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  height: 990px;
+  justify-content: flex-start;
+  min-width: 1440px;
+  padding: 0 51px;
+  position: relative;
+  width: auto;
+}
+.personalizado-5 .overlap-group-C61RwL {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 187px;
+  position: relative;
+  width: 425px;
+}
+.personalizado-5 .retangulo-11-4eduM0 {
+  background-color: transparent;
+  height: 112px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 113px;
+}
+.personalizado-5 .retangulo-14-xyUCsh {
+  background-color: transparent;
+  height: 100%;
+  left: 66px;
+  position: absolute;
+  top: 0px;
+  width: calc(100.00% - 66px);
+}
+.personalizado-5 .retangulo-15-xyUCsh {
+  background-color: transparent;
+  bottom: 1px;
+  height: 79px;
+  left: 1px;
+  position: absolute;
+  width: 66px;
+}
+.personalizado-5 .retangulo-16-C61RwL {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 146px;
+  margin-left: 492px;
+  margin-top: 41px;
+  position: relative;
+  width: 378px;
+}
+.personalizado-5 .uniao-3-4eduM0 {
+  background-color: transparent;
+  height: 158px;
+  left: 47px;
+  position: absolute;
+  top: 29px;
+  width: 378px;
+}
+:root {
+  --black: rgba(0,0,0,0.6);
+  --white: rgba(255,255,255,1.0);
+}

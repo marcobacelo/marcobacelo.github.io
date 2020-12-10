@@ -1,0 +1,42 @@
+/* screen - personalizado-39 */
+
+#overlay-personalizado-39 {
+  background-color: var(--black);
+}
+.anima-overlay .personalizado-39 {
+  background-color: #00000000;
+}
+.personalizado-39 {
+  align-items: flex-end;
+  background-color: var(--black);
+  background-image: url(../img/surface-pro-3---67@1x.png);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 990px;
+  padding: 347px 444px;
+  position: relative;
+  width: 1440px;
+}
+.personalizado-39 .retangulo-24-C61RwL {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 101px;
+  position: relative;
+  width: 524px;
+}
+.personalizado-39 .retangulo-25-C61RwL {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 113px;
+  margin-top: 28px;
+  position: relative;
+  width: 524px;
+}
+:root {
+  --black: rgba(0,0,0,0.6);
+  --white: rgba(255,255,255,1.0);
+}
