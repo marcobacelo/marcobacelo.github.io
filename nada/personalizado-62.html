@@ -6,8 +6,8 @@
     <link rel="shortcut icon" href="./img/favicon.png" />
     <meta name="og:type" content="website" />
     <meta name="twitter:card" content="photo" />
-    <link rel="stylesheet" type="text/css" href="css/personalizado-9.css" />
-    <link rel="stylesheet" type="text/css" href="css/personalizado-3.css" />
+    <link rel="stylesheet" type="text/css" href="css/personalizado-62.css" />
+    <link rel="stylesheet" type="text/css" href="css/personalizado-95.css" />
     <style>
       @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:700");
 
@@ -179,43 +179,55 @@
     <meta name="author" content="AnimaApp.com - Design to code, Automated." />
   </head>
   <body style="margin: 0">
-    <input type="hidden" id="anPageName" name="page" value="personalizado-3" />
+    <input type="hidden" id="anPageName" name="page" value="personalizado-62" />
     <div class="anima-container-center-horizontal">
-      <div class="personalizado-3 anima-screen" onclick="window.open('http://', '_self');">
-        <div class="retangulo-4-C61RwL"></div>
-        <div class="retangulo-10-C61RwL"></div>
-        <a href="personalizado-7.html" onclick="window.event.stopPropagation()">
-          <div class="retangulo-4-VMr6Om"></div
-        ></a>
-        <a href="personalizado-4.html" onclick="window.event.stopPropagation()">
-          <div class="retangulo-10-VMr6Om"></div
-        ></a>
+      <form
+        class="personalizado-62 anima-screen"
+        onclick="window.open('javascript:history.back()', '_self');"
+        name="form9"
+        action="form9"
+        method="post"
+      >
+        <div class="retangulo-31-C61RwL"></div>
+        <input
+          class="digite-aqui-a-frase-C61RwL montserratalternates-bold-dove-gray-22px"
+          name="digite-aqui-a-frase2-1"
+          placeholder=""
+          type="text"
+          required
+        />
         <a
-          href="javascript:AnimaShowOverlay('personalizado-9', 'anima-animate-appear');"
+          href="javascript:AnimaShowOverlay('personalizado-95', 'anima-animate-appear');"
           onclick="window.event.stopPropagation()"
         >
-          <div class="retangulo-17-C61RwL"></div
+          <div class="retangulo-37-C61RwL"></div
         ></a>
-      </div>
+      </form>
     </div>
-    <div id="overlay-personalizado-9" class="anima-overlay" style="min-height: 990px">
+    <div id="overlay-personalizado-95" class="anima-overlay" style="min-height: 990px">
       <div class="anima-container-center-horizontal">
-        <div class="personalizado-9 anima-screen" onclick="window.open('javascript:history.back()', '_self');">
-          <a href="personalizado-10.html" onclick="window.event.stopPropagation()">
-            <div class="retangulo-18-C61RwL"></div
+        <div class="personalizado-95 anima-screen">
+          <a href="personalizado-128.html"
+            ><img class="surface-pro-3-140-C61RwL" src="img/surface-pro-3---140-1@1x.png"
+          /></a>
+          <a href="javascript:AnimaShowOverlay('personalizado-39', 'anima-animate-appear');">
+            <div class="retangulo-22-C61RwL"></div
+          ></a>
+          <a href="javascript:AnimaShowOverlay('personalizado-17', 'anima-animate-appear');">
+            <div class="retangulo-23-C61RwL"></div
           ></a>
         </div>
       </div>
     </div>
     <script>
-      var overlay_id = "overlay-personalizado-9";
+      var overlay_id = "overlay-personalizado-95";
       document.getElementById(overlay_id).addEventListener(
         "click",
         function (event) {
           var e = event || window.event;
           var clickedDiv = e.toElement || e.target;
           if (clickedDiv.parentElement.id == overlay_id) {
-            AnimaHideOverlay("personalizado-9", "anima-animate-disappear");
+            AnimaHideOverlay("personalizado-95", "anima-animate-disappear");
           }
         },
         false
@@ -256,6 +268,28 @@
           }
         }
       };
+    </script>
+    <script>
+      /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
+
+      if (!HTMLFormElement.prototype.reportValidity) {
+        HTMLFormElement.prototype.reportValidity = function () {
+          if (this.checkValidity()) return true;
+          var btn = document.createElement("button");
+          this.appendChild(btn);
+          btn.click();
+          this.removeChild(btn);
+          return false;
+        };
+      }
+
+      function AnimaSubmitForm(form_name) {
+        var form = document.getElementsByName(form_name)[0];
+        if (form.reportValidity()) {
+          form.submit();
+          if (window.submitted) window.submitted();
+        }
+      }
     </script>
   </body>
 </html>
