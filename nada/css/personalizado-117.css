@@ -1,0 +1,44 @@
+/* screen - personalizado-117 */
+
+.montserratalternates-bold-dove-gray-22px {
+  color: var(--dove-gray);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+}
+.personalizado-117 {
+  background-color: var(--white);
+  height: 990px;
+  position: relative;
+  width: 1440px;
+}
+.personalizado-117 .retangulo-22-C61RwL {
+  background-color: transparent;
+  height: 118px;
+  left: 51px;
+  position: absolute;
+  top: 0px;
+  width: 118px;
+}
+.personalizado-117 .retangulo-23-C61RwL {
+  background-color: transparent;
+  height: 95px;
+  left: 1154px;
+  position: absolute;
+  top: 23px;
+  width: 268px;
+}
+.personalizado-117 .surface-pro-3-106-C61RwL {
+  background-color: transparent;
+  height: 990px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1440px;
+}
+:root {
+  --black: rgba(0,0,0,0.6);
+  --dove-gray: rgba(112,112,112,1.0);
+  --white: rgba(255,255,255,1.0);
+}

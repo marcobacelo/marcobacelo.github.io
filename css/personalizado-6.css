@@ -1,45 +1,37 @@
 /* screen - personalizado-6 */
 
+.montserratalternates-bold-dove-gray-22px {
+  color: var(--dove-gray);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+}
 .personalizado-6 {
-  align-items: flex-start;
   background-color: var(--white);
   background-image: url(../img/surface-pro-3---15-2@1x.png);
   background-size: 100% 100%;
-  box-sizing: border-box;
-  display: inline-flex;
-  flex-direction: row;
   height: 990px;
-  justify-content: flex-start;
-  min-width: 1440px;
-  padding: 0 51px;
   position: relative;
-  width: auto;
+  width: 1440px;
 }
-.personalizado-6 .overlap-group-C61RwL {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 187px;
-  position: relative;
-  width: 425px;
-}
-.personalizado-6 .retangulo-11-4eduM0 {
+.personalizado-6 .retangulo-11-C61RwL {
   background-color: transparent;
   height: 112px;
-  left: 0px;
+  left: 51px;
   position: absolute;
   top: 0px;
   width: 113px;
 }
 .personalizado-6 .retangulo-12-C61RwL {
   background-color: transparent;
-  flex-shrink: 0;
   height: 154px;
-  margin-left: 46px;
-  margin-top: 37px;
-  position: relative;
+  left: 522px;
+  position: absolute;
+  top: 37px;
   width: 390px;
 }
-.personalizado-6 .retangulo-14-xyUCsh {
+.personalizado-6 .retangulo-14-sGFOKm {
   background-color: transparent;
   height: 100%;
   left: 66px;
@@ -47,7 +39,7 @@
   top: 0px;
   width: calc(100.00% - 66px);
 }
-.personalizado-6 .retangulo-15-xyUCsh {
+.personalizado-6 .retangulo-15-sGFOKm {
   background-color: transparent;
   bottom: 1px;
   height: 79px;
@@ -57,22 +49,22 @@
 }
 .personalizado-6 .retangulo-26-C61RwL {
   background-color: rgba(245,190,148,1.0);
-  flex-shrink: 0;
   height: 13px;
-  margin-left: 86px;
-  margin-top: 704px;
-  position: relative;
+  left: 998px;
+  position: absolute;
+  top: 704px;
   width: 11px;
 }
-.personalizado-6 .uniao-3-4eduM0 {
+.personalizado-6 .uniao-3-C61RwL {
   background-color: transparent;
   height: 158px;
-  left: 47px;
+  left: 98px;
   position: absolute;
   top: 29px;
   width: 378px;
 }
 :root {
   --black: rgba(0,0,0,0.6);
+  --dove-gray: rgba(112,112,112,1.0);
   --white: rgba(255,255,255,1.0);
 }

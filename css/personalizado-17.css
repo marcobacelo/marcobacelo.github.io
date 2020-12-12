@@ -1,83 +1,54 @@
 /* screen - personalizado-17 */
 
-#overlay-personalizado-17 {
-  background-color: var(--black);
-}
-.anima-overlay .personalizado-17 {
-  background-color: #00000000;
+.montserratalternates-bold-dove-gray-22px {
+  color: var(--dove-gray);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
 }
 .personalizado-17 {
-  align-items: flex-start;
   background-color: var(--black);
   background-image: url(../img/surface-pro-3---87@1x.png);
   background-size: 100% 100%;
-  box-sizing: border-box;
-  display: inline-flex;
-  flex-direction: row;
   height: 990px;
-  justify-content: flex-start;
-  min-width: 1440px;
   position: relative;
-  width: auto;
-}
-.personalizado-17 .auto-flex-uxzUmT {
-  align-items: flex-start;
-  background-color: transparent;
-  box-sizing: border-box;
-  display: inline-flex;
-  flex-direction: row;
-  flex-shrink: 0;
-  height: 817px;
-  justify-content: flex-start;
-  min-width: 1060px;
-  position: relative;
-  width: auto;
-}
-.personalizado-17 .auto-flex1-C61RwL {
-  align-items: flex-start;
-  background-color: transparent;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  height: auto;
-  justify-content: flex-start;
-  min-height: 990px;
-  position: relative;
-  width: 1060px;
+  width: 1440px;
 }
 .personalizado-17 .retangulo-6-C61RwL {
   background-color: transparent;
-  flex-shrink: 0;
   height: 990px;
-  margin-left: 0px;
-  position: relative;
+  left: 1060px;
+  position: absolute;
+  top: 0px;
   width: 380px;
 }
-.personalizado-17 .retangulo-7-uxzUmT {
+.personalizado-17 .retangulo-7-C61RwL {
   background-color: transparent;
-  flex-shrink: 0;
   height: 173px;
-  margin-top: 0px;
-  position: relative;
+  left: 0px;
+  position: absolute;
+  top: 817px;
   width: 1060px;
 }
-.personalizado-17 .retangulo-8-c24oYb {
+.personalizado-17 .retangulo-8-C61RwL {
   background-color: transparent;
-  flex-shrink: 0;
   height: 817px;
-  position: relative;
+  left: 0px;
+  position: absolute;
+  top: 0px;
   width: 374px;
 }
-.personalizado-17 .retangulo-9-c24oYb {
+.personalizado-17 .retangulo-9-C61RwL {
   background-color: transparent;
-  flex-shrink: 0;
   height: 157px;
-  margin-left: 0px;
-  position: relative;
+  left: 374px;
+  position: absolute;
+  top: 0px;
   width: 686px;
 }
 :root {
   --black: rgba(0,0,0,0.6);
+  --dove-gray: rgba(112,112,112,1.0);
   --white: rgba(255,255,255,1.0);
 }

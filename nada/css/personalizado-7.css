@@ -1,5 +1,12 @@
 /* screen - personalizado-7 */
 
+.montserratalternates-bold-dove-gray-22px {
+  color: var(--dove-gray);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+}
 .personalizado-7 {
   background-color: var(--white);
   height: 990px;
@@ -65,5 +72,6 @@
 }
 :root {
   --black: rgba(0,0,0,0.6);
+  --dove-gray: rgba(112,112,112,1.0);
   --white: rgba(255,255,255,1.0);
 }

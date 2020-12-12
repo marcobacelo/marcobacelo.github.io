@@ -1,5 +1,12 @@
 /* screen - personalizado-16 */
 
+.montserratalternates-bold-dove-gray-22px {
+  color: var(--dove-gray);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+}
 .personalizado-16 {
   background-color: var(--white);
   background-image: url(../img/surface-pro-3---66@1x.png);
@@ -8,7 +15,16 @@
   position: relative;
   width: 1440px;
 }
+.personalizado-16 .retangulo-27-C61RwL {
+  background-color: transparent;
+  height: 124px;
+  left: 561px;
+  position: relative;
+  top: 645px;
+  width: 322px;
+}
 :root {
   --black: rgba(0,0,0,0.6);
+  --dove-gray: rgba(112,112,112,1.0);
   --white: rgba(255,255,255,1.0);
 }

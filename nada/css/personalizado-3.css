@@ -1,79 +1,62 @@
 /* screen - personalizado-3 */
 
+.montserratalternates-bold-dove-gray-22px {
+  color: var(--dove-gray);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+}
 .personalizado-3 {
-  align-items: flex-start;
   background-color: transparent;
-  background-image: url(../img/surface-pro-3---18-1@1x.png);
+  background-image: url(../img/surface-pro-3---18@1x.png);
   background-size: 100% 100%;
-  box-sizing: border-box;
-  display: inline-flex;
-  flex-direction: row;
   height: 990px;
-  justify-content: flex-start;
-  min-width: 1440px;
-  padding: 0 53px;
   position: relative;
-  width: auto;
+  width: 1440px;
 }
-.personalizado-3 .overlap-group-C61RwL {
+.personalizado-3 .retangulo-10-C61RwL {
   background-color: transparent;
-  flex-shrink: 0;
-  height: 227px;
-  margin-top: 699px;
-  position: relative;
-  width: 311px;
-}
-.personalizado-3 .overlap-group1-C61RwL {
-  background-color: transparent;
-  flex-shrink: 0;
   height: 222px;
-  margin-left: 109px;
-  margin-top: 715px;
-  position: relative;
+  left: 963px;
+  position: absolute;
+  top: 715px;
   width: 424px;
 }
-.personalizado-3 .retangulo-10-RH0WJ5 {
+.personalizado-3 .retangulo-10-VMr6Om {
   background-color: transparent;
   height: 222px;
-  left: 0px;
+  left: 963px;
   position: absolute;
-  top: 0px;
-  width: 424px;
-}
-.personalizado-3 .retangulo-10-s3i1G8 {
-  background-color: transparent;
-  height: 222px;
-  left: 0px;
-  position: absolute;
-  top: 0px;
+  top: 715px;
   width: 424px;
 }
 .personalizado-3 .retangulo-17-C61RwL {
   background-color: transparent;
-  flex-shrink: 0;
   height: 326px;
-  margin-left: 126px;
-  margin-top: 639px;
-  position: relative;
+  left: 587px;
+  position: absolute;
+  top: 639px;
   width: 267px;
 }
-.personalizado-3 .retangulo-4-4eduM0 {
+.personalizado-3 .retangulo-4-C61RwL {
   background-color: transparent;
   height: 227px;
-  left: 0px;
+  left: 150px;
   position: absolute;
-  top: 0px;
+  top: 699px;
   width: 311px;
 }
-.personalizado-3 .retangulo-4-BJQsbv {
+.personalizado-3 .retangulo-4-VMr6Om {
   background-color: transparent;
   height: 227px;
-  left: 0px;
+  left: 150px;
   position: absolute;
-  top: 0px;
+  top: 699px;
   width: 311px;
 }
 :root {
   --black: rgba(0,0,0,0.6);
+  --dove-gray: rgba(112,112,112,1.0);
   --white: rgba(255,255,255,1.0);
 }

@@ -1,29 +1,30 @@
 /* screen - personalizado-15 */
 
+.montserratalternates-bold-dove-gray-22px {
+  color: var(--dove-gray);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+}
 .personalizado-15 {
-  align-items: flex-start;
   background-color: var(--white);
   background-image: url(../img/surface-pro-3---136@1x.png);
   background-size: 100% 100%;
-  box-sizing: border-box;
-  display: inline-flex;
-  flex-direction: row;
   height: 990px;
-  justify-content: flex-start;
-  min-width: 1440px;
-  padding: 0 393px;
   position: relative;
-  width: auto;
+  width: 1440px;
 }
 .personalizado-15 .retangulo-20-C61RwL {
   background-color: transparent;
-  flex-shrink: 0;
   height: 134px;
-  margin-top: 584px;
+  left: 393px;
   position: relative;
+  top: 584px;
   width: 653px;
 }
 :root {
   --black: rgba(0,0,0,0.6);
+  --dove-gray: rgba(112,112,112,1.0);
   --white: rgba(255,255,255,1.0);
 }

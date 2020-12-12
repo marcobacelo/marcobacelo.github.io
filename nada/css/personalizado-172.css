@@ -1,0 +1,80 @@
+/* screen - personalizado-172 */
+
+.montserratalternates-bold-dove-gray-22px {
+  color: var(--dove-gray);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+}
+.personalizado-172 {
+  background-color: var(--black);
+  background-image: url(../img/surface-pro-3---295@1x.png);
+  background-size: 100% 100%;
+  height: 990px;
+  position: relative;
+  width: 1440px;
+}
+.personalizado-172 .digite-aqui-rosa-C61RwL {
+  background-color: transparent;
+  border: 0;
+  height: 29px;
+  left: 545px;
+  letter-spacing: 0.00px;
+  line-height: 22px;
+  padding: 0;
+  position: absolute;
+  resize: none;
+  text-align: center;
+  top: 702px;
+  white-space: nowrap;
+  width: 371px;
+}
+.personalizado-172 .digite-aqui-rosa-C61RwL::placeholder {
+  color: rgba(112,112,112,0.6);
+}
+.personalizado-172 .retangulo-39-C61RwL {
+  background-color: var(--white);
+  height: 43px;
+  left: 545px;
+  position: absolute;
+  top: 691px;
+  width: 369px;
+}
+.personalizado-172 .retangulo-40-C61RwL {
+  background-color: transparent;
+  height: 129px;
+  left: 438px;
+  position: absolute;
+  top: 401px;
+  width: 138px;
+}
+.personalizado-172 .retangulo-42-C61RwL {
+  background-color: transparent;
+  height: 129px;
+  left: 735px;
+  position: absolute;
+  top: 401px;
+  width: 138px;
+}
+.personalizado-172 .retangulo-43-C61RwL {
+  background-color: transparent;
+  height: 129px;
+  left: 883px;
+  position: absolute;
+  top: 401px;
+  width: 138px;
+}
+.personalizado-172 .retangulo-44-C61RwL {
+  background-color: transparent;
+  height: 137px;
+  left: 672px;
+  position: absolute;
+  top: 761px;
+  width: 115px;
+}
+:root {
+  --black: rgba(0,0,0,0.6);
+  --dove-gray: rgba(112,112,112,1.0);
+  --white: rgba(255,255,255,1.0);
+}

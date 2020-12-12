@@ -1,138 +1,96 @@
 /* screen - personalizado-4 */
 
+.montserratalternates-bold-dove-gray-22px {
+  color: var(--dove-gray);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+}
 .personalizado-4 {
-  align-items: flex-start;
   background-color: var(--white);
   background-image: url(../img/surface-pro-3---15@1x.png);
   background-size: 100% 100%;
-  box-sizing: border-box;
-  display: inline-flex;
-  flex-direction: row;
   height: 990px;
-  justify-content: flex-start;
-  min-width: 1440px;
-  padding: 0 51px;
   position: relative;
-  width: auto;
+  width: 1440px;
 }
-.personalizado-4 .auto-flex-C61RwL {
-  align-items: flex-start;
-  background-color: transparent;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  height: auto;
-  justify-content: flex-start;
-  margin-left: 23px;
-  margin-top: 37px;
-  min-height: 477px;
-  position: relative;
-  width: 725px;
-}
-.personalizado-4 .insira-seu-nome-m4FBGj {
+.personalizado-4 .insira-seu-nome-C61RwL {
   background-color: transparent;
   border: 0;
-  color: rgba(112,112,112,1.0);
-  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
   height: 29px;
-  left: 15px;
+  left: 202px;
   letter-spacing: 0.00px;
   line-height: 22px;
   padding: 0;
   position: absolute;
   resize: none;
   text-align: left;
-  top: 22px;
-  white-space: nowrap;
-  width: 191px;
+  top: 339px;
+  width: 519px;
 }
-.personalizado-4 .insira-seu-nome-m4FBGj::placeholder {
+.personalizado-4 .insira-seu-nome-C61RwL::placeholder {
   color: rgba(112,112,112,0.6);
 }
-.personalizado-4 .insira-sua-idade-GtdoDw {
+.personalizado-4 .insira-sua-idade-C61RwL {
   background-color: transparent;
   border: 0;
-  color: rgba(112,112,112,1.0);
-  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 700;
   height: 29px;
-  left: 15px;
+  left: 202px;
   letter-spacing: 0.00px;
   line-height: 22px;
   padding: 0;
   position: absolute;
   resize: none;
   text-align: left;
-  top: 22px;
-  white-space: nowrap;
-  width: 191px;
+  top: 468px;
+  width: 520px;
 }
-.personalizado-4 .insira-sua-idade-GtdoDw::placeholder {
+.personalizado-4 .insira-sua-idade-C61RwL::placeholder {
   color: rgba(112,112,112,0.6);
-}
-.personalizado-4 .overlap-group-fhuxN3 {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 66px;
-  margin-top: 128px;
-  position: relative;
-  width: 541px;
-}
-.personalizado-4 .overlap-group1-fhuxN3 {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 66px;
-  margin-top: 63px;
-  position: relative;
-  width: 541px;
 }
 .personalizado-4 .retangulo-11-C61RwL {
   background-color: transparent;
-  flex-shrink: 0;
   height: 112px;
-  position: relative;
+  left: 51px;
+  position: absolute;
+  top: 0px;
   width: 113px;
 }
-.personalizado-4 .retangulo-12-fhuxN3 {
-  align-self: flex-end;
+.personalizado-4 .retangulo-12-C61RwL {
   background-color: transparent;
-  flex-shrink: 0;
   height: 154px;
-  position: relative;
+  left: 522px;
+  position: absolute;
+  top: 37px;
   width: 390px;
 }
 .personalizado-4 .retangulo-13-C61RwL {
   background-color: transparent;
-  flex-shrink: 0;
   height: 154px;
-  margin-left: 55px;
-  margin-top: 37px;
-  position: relative;
+  left: 967px;
+  position: absolute;
+  top: 37px;
   width: 384px;
 }
-.personalizado-4 .retangulo-2-m4FBGj {
+.personalizado-4 .retangulo-2-C61RwL {
   background-color: var(--white);
   height: 66px;
-  left: 0px;
+  left: 187px;
   position: absolute;
-  top: 0px;
+  top: 319px;
   width: 541px;
 }
-.personalizado-4 .retangulo-3-GtdoDw {
+.personalizado-4 .retangulo-3-C61RwL {
   background-color: var(--white);
   height: 66px;
-  left: 0px;
+  left: 187px;
   position: absolute;
-  top: 0px;
+  top: 448px;
   width: 541px;
 }
 :root {
   --black: rgba(0,0,0,0.6);
+  --dove-gray: rgba(112,112,112,1.0);
   --white: rgba(255,255,255,1.0);
 }
