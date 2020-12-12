@@ -182,15 +182,25 @@
     <input type="hidden" id="anPageName" name="page" value="personalizado-48" />
     <div class="anima-container-center-horizontal">
       <div class="personalizado-48 anima-screen">
-        <a href="javascript:AnimaShowOverlay('personalizado-45', 'anima-animate-appear');"
-          ><img class="surface-pro-3-1-C61RwL" src="img/surface-pro-3---1@1x.png"
+        <a
+          href="javascript:AnimaShowOverlay('personalizado-45', 'anima-animate-appear');"
+          ><img
+            class="surface-pro-3-1-C61RwL"
+            src="img/surface-pro-3---1@1x.png"
         /></a>
       </div>
     </div>
-    <div id="overlay-personalizado-45" class="anima-overlay" style="min-height: 990px">
+    <div
+      id="overlay-personalizado-45"
+      class="anima-overlay"
+      style="min-height: 990px"
+    >
       <div class="anima-container-center-horizontal">
-        <div class="personalizado-45 anima-screen" onclick="window.open('javascript:history.back()', '_self');">
-          <a href="personalizado-3.html" onclick="window.event.stopPropagation()">
+        <div
+          class="personalizado-45 anima-screen"
+          onclick="window.open('javascript:history.back()', '_self');"
+        >
+          <a href="../index.html" onclick="window.event.stopPropagation()">
             <div class="retangulo-57-C61RwL"></div
           ></a>
         </div>
@@ -213,11 +223,15 @@
     <script>
       AnimaShowOverlay = function (overlayName, animationName) {
         overlayName = "overlay-" + overlayName;
-        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var cssClasses = document
+          .getElementById(overlayName)
+          .className.split(" ");
         var last = cssClasses.slice(-1)[0];
         if (last.lastIndexOf("anima-animate") == -1) {
           document.getElementById(overlayName).className =
-            document.getElementById(overlayName).className + " " + animationName;
+            document.getElementById(overlayName).className +
+            " " +
+            animationName;
         }
         if (window.AnimaloadAsyncSrc != undefined) {
           AnimaloadAsyncSrc();
@@ -225,7 +239,9 @@
       };
       AnimaHideOverlay = function (overlayName, animationName) {
         overlayName = "overlay-" + overlayName;
-        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var cssClasses = document
+          .getElementById(overlayName)
+          .className.split(" ");
         var last = cssClasses.slice(-1)[0];
         if (last.lastIndexOf("anima-animate") != -1) {
           cssClasses.splice(-1);
@@ -234,7 +250,9 @@
 
           cssClasses.splice(-1);
           setTimeout(function () {
-            document.getElementById(overlayName).className = cssClasses.join(" ");
+            document.getElementById(overlayName).className = cssClasses.join(
+              " "
+            );
           }, 1100);
         }
         var vids = document.getElementsByTagName("video");
