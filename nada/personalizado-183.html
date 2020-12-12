@@ -180,13 +180,7 @@
   <body style="margin: 0">
     <input type="hidden" id="anPageName" name="page" value="personalizado-183" />
     <div class="anima-container-center-horizontal">
-      <form
-        class="personalizado-183 anima-screen"
-        onclick="window.open('javascript:history.back()', '_self');"
-        name="form6"
-        action="form6"
-        method="post"
-      >
+      <div class="personalizado-183 anima-screen" onclick="window.open('javascript:history.back()', '_self');">
         <img class="surface-pro-3-141-C61RwL" src="img/surface-pro-3---141-1@1x.png" />
         <img class="surface-pro-3-142-C61RwL" src="img/surface-pro-3---142-2@1x.png" />
         <img class="surface-pro-3-143-C61RwL" src="img/surface-pro-3---142-2@1x.png" />
@@ -214,29 +208,7 @@
         <a href="personalizado-185.html" onclick="window.event.stopPropagation()">
           <div class="retangulo-44-C61RwL"></div
         ></a>
-      </form>
+      </div>
     </div>
-    <script>
-      /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
-
-      if (!HTMLFormElement.prototype.reportValidity) {
-        HTMLFormElement.prototype.reportValidity = function () {
-          if (this.checkValidity()) return true;
-          var btn = document.createElement("button");
-          this.appendChild(btn);
-          btn.click();
-          this.removeChild(btn);
-          return false;
-        };
-      }
-
-      function AnimaSubmitForm(form_name) {
-        var form = document.getElementsByName(form_name)[0];
-        if (form.reportValidity()) {
-          form.submit();
-          if (window.submitted) window.submitted();
-        }
-      }
-    </script>
   </body>
 </html>

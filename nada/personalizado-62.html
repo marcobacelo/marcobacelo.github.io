@@ -180,18 +180,9 @@
   <body style="margin: 0">
     <input type="hidden" id="anPageName" name="page" value="personalizado-62" />
     <div class="anima-container-center-horizontal">
-      <form
-        class="personalizado-62 anima-screen"
-        onclick="window.open('javascript:history.back()', '_self');"
-        name="form9"
-        action="form9"
-        method="post"
-      >
+      <div class="personalizado-62 anima-screen" onclick="window.open('javascript:history.back()', '_self');">
         <div class="retangulo-79-C61RwL border-class-1"></div>
-        <img
-          class="surface-pro-3-29-C61RwL"
-          src="img/surface-pro-3---29@1x.png"
-        />
+        <img class="surface-pro-3-29-C61RwL" src="img/surface-pro-3---29@1x.png" />
         <div class="retangulo-31-C61RwL"></div>
         <input
           class="digite-aqui-a-frase-C61RwL montserratalternates-bold-dove-gray-22px"
@@ -200,35 +191,10 @@
           type="text"
           required
         />
-        <a
-          href="personalizado-89.html"
-          onclick="window.event.stopPropagation()"
-        >
+        <a href="personalizado-89.html" onclick="window.event.stopPropagation()">
           <div class="retangulo-37-C61RwL"></div
         ></a>
-      </form>
+      </div>
     </div>
-    <script>
-      /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
-
-      if (!HTMLFormElement.prototype.reportValidity) {
-        HTMLFormElement.prototype.reportValidity = function () {
-          if (this.checkValidity()) return true;
-          var btn = document.createElement("button");
-          this.appendChild(btn);
-          btn.click();
-          this.removeChild(btn);
-          return false;
-        };
-      }
-
-      function AnimaSubmitForm(form_name) {
-        var form = document.getElementsByName(form_name)[0];
-        if (form.reportValidity()) {
-          form.submit();
-          if (window.submitted) window.submitted();
-        }
-      }
-    </script>
   </body>
 </html>

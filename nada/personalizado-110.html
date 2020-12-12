@@ -180,13 +180,7 @@
   <body style="margin: 0">
     <input type="hidden" id="anPageName" name="page" value="personalizado-110" />
     <div class="anima-container-center-horizontal">
-      <form
-        class="personalizado-110 anima-screen"
-        onclick="window.open('javascript:history.back()', '_self');"
-        name="form1"
-        action="form1"
-        method="post"
-      >
+      <div class="personalizado-110 anima-screen" onclick="window.open('javascript:history.back()', '_self');">
         <div class="grupo-59-C61RwL">
           <img class="surface-pro-3-176-ujpQOg" src="img/surface-pro-3---176-1@1x.png" />
           <img class="caminho-4-ujpQOg" src="img/caminho-4-1@1x.png" />
@@ -245,29 +239,7 @@
         <a href="personalizado-78.html" onclick="window.event.stopPropagation()">
           <div class="retangulo-51-C61RwL"></div
         ></a>
-      </form>
+      </div>
     </div>
-    <script>
-      /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
-
-      if (!HTMLFormElement.prototype.reportValidity) {
-        HTMLFormElement.prototype.reportValidity = function () {
-          if (this.checkValidity()) return true;
-          var btn = document.createElement("button");
-          this.appendChild(btn);
-          btn.click();
-          this.removeChild(btn);
-          return false;
-        };
-      }
-
-      function AnimaSubmitForm(form_name) {
-        var form = document.getElementsByName(form_name)[0];
-        if (form.reportValidity()) {
-          form.submit();
-          if (window.submitted) window.submitted();
-        }
-      }
-    </script>
   </body>
 </html>
