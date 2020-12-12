@@ -7,8 +7,6 @@
     <meta name="og:type" content="website" />
     <meta name="twitter:card" content="photo" />
     <link rel="stylesheet" type="text/css" href="css/personalizado-131.css" />
-    <link rel="stylesheet" type="text/css" href="css/personalizado-153.css" />
-    <link rel="stylesheet" type="text/css" href="css/personalizado-142.css" />
     <style>
       @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:700");
 
@@ -189,133 +187,24 @@
         action="form4"
         method="post"
       >
-        <a
-          href="javascript:AnimaShowOverlay('personalizado-142', 'anima-animate-appear');"
-          onclick="window.event.stopPropagation()"
-        >
+        <div class="retangulo-82-C61RwL border-class-1"></div>
+        <img class="surface-pro-3-299-C61RwL" src="img/surface-pro-3---299@1x.png" />
+        <a href="personalizado-142.html" onclick="window.event.stopPropagation()">
           <div class="retangulo-49-C61RwL"></div
         ></a>
         <div class="retangulo-39-C61RwL"></div>
         <input
           class="escreva-aq-i-vassoura-C61RwL montserratalternates-bold-dove-gray-22px"
-          name="escreva-aqui-vassoura3"
+          name="escreva-aqui-vassoura5"
           placeholder=""
           type="text"
           required
         />
-        <a
-          href="javascript:AnimaShowOverlay('personalizado-153', 'anima-animate-appear');"
-          onclick="window.event.stopPropagation()"
-        >
+        <a href="personalizado-153.html" onclick="window.event.stopPropagation()">
           <div class="retangulo-50-C61RwL"></div
         ></a>
       </form>
     </div>
-    <div id="overlay-personalizado-153" class="anima-overlay" style="min-height: 990px">
-      <div class="anima-container-center-horizontal">
-        <div class="personalizado-153 anima-screen" onclick="window.open('javascript:history.back()', '_self');">
-          <a href="personalizado-164.html" onclick="window.event.stopPropagation()">
-            <div class="retangulo-51-C61RwL"></div
-          ></a>
-        </div>
-      </div>
-    </div>
-    <script>
-      var overlay_id = "overlay-personalizado-153";
-      document.getElementById(overlay_id).addEventListener(
-        "click",
-        function (event) {
-          var e = event || window.event;
-          var clickedDiv = e.toElement || e.target;
-          if (clickedDiv.parentElement.id == overlay_id) {
-            AnimaHideOverlay("personalizado-153", "anima-animate-disappear");
-          }
-        },
-        false
-      );
-    </script>
-    <div id="overlay-personalizado-142" class="anima-overlay" style="min-height: 990px">
-      <div class="anima-container-center-horizontal">
-        <form
-          class="personalizado-142 anima-screen"
-          onclick="window.open('javascript:history.back()', '_self');"
-          name="form3"
-          action="form3"
-          method="post"
-        >
-          <a
-            href="javascript:AnimaShowOverlay('personalizado-131', 'anima-animate-appear');"
-            onclick="window.event.stopPropagation()"
-          >
-            <div class="retangulo-48-C61RwL"></div
-          ></a>
-          <div class="retangulo-39-C61RwL"></div>
-          <input
-            class="escreva-aq-ador-de-po-C61RwL montserratalternates-bold-dove-gray-22px"
-            name="escreva-aqui-aspirador-de-pó3"
-            placeholder=""
-            type="text"
-            required
-          />
-          <a
-            href="javascript:AnimaShowOverlay('personalizado-186', 'anima-animate-appear');"
-            onclick="window.event.stopPropagation()"
-          >
-            <div class="retangulo-50-C61RwL"></div
-          ></a>
-        </form>
-      </div>
-    </div>
-    <script>
-      var overlay_id = "overlay-personalizado-142";
-      document.getElementById(overlay_id).addEventListener(
-        "click",
-        function (event) {
-          var e = event || window.event;
-          var clickedDiv = e.toElement || e.target;
-          if (clickedDiv.parentElement.id == overlay_id) {
-            AnimaHideOverlay("personalizado-142", "anima-animate-disappear");
-          }
-        },
-        false
-      );
-    </script>
-    <script>
-      AnimaShowOverlay = function (overlayName, animationName) {
-        overlayName = "overlay-" + overlayName;
-        var cssClasses = document.getElementById(overlayName).className.split(" ");
-        var last = cssClasses.slice(-1)[0];
-        if (last.lastIndexOf("anima-animate") == -1) {
-          document.getElementById(overlayName).className =
-            document.getElementById(overlayName).className + " " + animationName;
-        }
-        if (window.AnimaloadAsyncSrc != undefined) {
-          AnimaloadAsyncSrc();
-        }
-      };
-      AnimaHideOverlay = function (overlayName, animationName) {
-        overlayName = "overlay-" + overlayName;
-        var cssClasses = document.getElementById(overlayName).className.split(" ");
-        var last = cssClasses.slice(-1)[0];
-        if (last.lastIndexOf("anima-animate") != -1) {
-          cssClasses.splice(-1);
-          cssClasses.push(animationName);
-          document.getElementById(overlayName).className = cssClasses.join(" ");
-
-          cssClasses.splice(-1);
-          setTimeout(function () {
-            document.getElementById(overlayName).className = cssClasses.join(" ");
-          }, 1100);
-        }
-        var vids = document.getElementsByTagName("video");
-        if (vids) {
-          for (var i = 0; i < vids.length; i++) {
-            var video = vids.item(i);
-            video.pause();
-          }
-        }
-      };
-    </script>
     <script>
       /* Copyright (c) 2016 Tobias Buschor https://goo.gl/gl0mbf | MIT License https://goo.gl/HgajeK */
 

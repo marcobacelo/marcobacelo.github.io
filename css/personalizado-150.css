@@ -1,5 +1,8 @@
 /* screen - personalizado-150 */
 
+.border-class-1 {
+  border: 1px solid var(--dove-gray);
+}
 .montserratalternates-bold-dove-gray-22px {
   color: var(--dove-gray);
   font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
@@ -7,12 +10,25 @@
   font-style: normal;
   font-weight: 700;
 }
+.montserratalternates-bold-picton-blue-49px {
+  color: var(--picton-blue);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 700;
+}
 .personalizado-150 {
   background-color: var(--black);
-  background-image: url(../img/surface-pro-3---10@1x.png);
-  background-size: 100% 100%;
   height: 990px;
   position: relative;
+  width: 1440px;
+}
+.personalizado-150 .group-109-C61RwL {
+  background-color: transparent;
+  height: 990px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
   width: 1440px;
 }
 .personalizado-150 .retangulo-39-C61RwL {
@@ -55,6 +71,14 @@
   top: 401px;
   width: 138px;
 }
+.personalizado-150 .retangulo-82-C61RwL {
+  background-color: var(--black);
+  height: 990px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1440px;
+}
 .personalizado-150 .selecione-a-cor-C61RwL {
   background-color: transparent;
   border: 0;
@@ -74,8 +98,49 @@
 .personalizado-150 .selecione-a-cor-C61RwL::placeholder {
   color: rgba(112,112,112,0.6);
 }
+.personalizado-150 .surface-pro-3-10-C61RwL {
+  background-color: transparent;
+  height: 990px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1440px;
+}
+.personalizado-150 .surface-pro-3-141-C61RwL {
+  background-color: transparent;
+  height: 495px;
+  left: 720px;
+  position: absolute;
+  top: 0px;
+  width: 720px;
+}
+.personalizado-150 .surface-pro-3-142-C61RwL {
+  background-color: transparent;
+  height: 495px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 720px;
+}
+.personalizado-150 .surface-pro-3-143-C61RwL {
+  background-color: transparent;
+  height: 495px;
+  left: 720px;
+  position: absolute;
+  top: 495px;
+  width: 720px;
+}
+.personalizado-150 .surface-pro-3-144-C61RwL {
+  background-color: transparent;
+  height: 495px;
+  left: 0px;
+  position: absolute;
+  top: 495px;
+  width: 720px;
+}
 :root {
   --black: rgba(0,0,0,0.6);
   --dove-gray: rgba(112,112,112,1.0);
+  --picton-blue: rgba(74,193,240,1.0);
   --white: rgba(255,255,255,1.0);
 }

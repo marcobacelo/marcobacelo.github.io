@@ -1,5 +1,8 @@
 /* screen - personalizado-15 */
 
+.border-class-1 {
+  border: 1px solid var(--dove-gray);
+}
 .montserratalternates-bold-dove-gray-22px {
   color: var(--dove-gray);
   font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
@@ -7,24 +10,179 @@
   font-style: normal;
   font-weight: 700;
 }
+.montserratalternates-bold-picton-blue-49px {
+  color: var(--picton-blue);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 700;
+}
 .personalizado-15 {
-  background-color: var(--white);
-  background-image: url(../img/surface-pro-3---136@1x.png);
-  background-size: 100% 100%;
+  background-color: var(--black);
   height: 990px;
   position: relative;
+  width: 1440px;
+}
+.personalizado-15 .elipse-1-1BPPSw {
+  background-color: transparent;
+  height: 108px;
+  left: 30px;
+  position: absolute;
+  top: 30px;
+  width: 108px;
+}
+.personalizado-15 .elipse-2-1BPPSw {
+  background-color: transparent;
+  height: 90px;
+  left: 39px;
+  position: absolute;
+  top: 39px;
+  width: 90px;
+}
+.personalizado-15 .elipse-3-1BPPSw {
+  background-color: transparent;
+  height: 108px;
+  position: absolute;
+  right: calc(40.02% - 43px);
+  top: 30px;
+  width: 108px;
+}
+.personalizado-15 .elipse-4-1BPPSw {
+  background-color: transparent;
+  height: 90px;
+  position: absolute;
+  right: calc(40.15% - 36px);
+  top: 39px;
+  width: 90px;
+}
+.personalizado-15 .elipse-5-1BPPSw {
+  background-color: transparent;
+  bottom: 51px;
+  height: 108px;
+  left: 30px;
+  position: absolute;
+  width: 108px;
+}
+.personalizado-15 .elipse-6-1BPPSw {
+  background-color: transparent;
+  bottom: 60px;
+  height: 90px;
+  left: 39px;
+  position: absolute;
+  width: 90px;
+}
+.personalizado-15 .elipse-7-1BPPSw {
+  background-color: transparent;
+  bottom: 51px;
+  height: 108px;
+  position: absolute;
+  right: calc(40.02% - 43px);
+  width: 108px;
+}
+.personalizado-15 .elipse-8-1BPPSw {
+  background-color: transparent;
+  bottom: 60px;
+  height: 90px;
+  position: absolute;
+  right: calc(40.15% - 36px);
+  width: 90px;
+}
+.personalizado-15 .group-107-1BPPSw {
+  background-color: transparent;
+  height: 108px;
+  position: absolute;
+  right: calc(48.07% - 269px);
+  top: calc(50.00% - 54px);
+  width: 560px;
+}
+.personalizado-15 .grupo-60-C61RwL {
+  background-color: transparent;
+  background-image: url(../img/surface-pro-3---135-1@1x.png);
+  background-size: 100% 100%;
+  height: 990px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
   width: 1440px;
 }
 .personalizado-15 .retangulo-20-C61RwL {
   background-color: transparent;
   height: 134px;
   left: 393px;
-  position: relative;
+  position: absolute;
   top: 584px;
   width: 653px;
+}
+.personalizado-15 .retangulo-66-1BPPSw {
+  background-color: var(--black);
+  height: 100%;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+.personalizado-15 .surface-pro-3-136-C61RwL {
+  background-color: transparent;
+  height: 990px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1440px;
+}
+.personalizado-15 .x1-1BPPSw {
+  background-color: transparent;
+  height: 61px;
+  left: 74px;
+  letter-spacing: 0.00px;
+  line-height: 49px;
+  position: absolute;
+  text-align: left;
+  top: 58px;
+  white-space: nowrap;
+  width: 21px;
+}
+.personalizado-15 .x2-1BPPSw {
+  background-color: transparent;
+  height: 61px;
+  letter-spacing: 0.00px;
+  line-height: 49px;
+  opacity: 0.5;
+  position: absolute;
+  right: calc(40.49% - 12px);
+  text-align: center;
+  top: 58px;
+  white-space: nowrap;
+  width: 30px;
+}
+.personalizado-15 .x3-1BPPSw {
+  background-color: transparent;
+  bottom: 70px;
+  height: 61px;
+  left: 69px;
+  letter-spacing: 0.00px;
+  line-height: 49px;
+  opacity: 0.5;
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  width: 32px;
+}
+.personalizado-15 .x4-1BPPSw {
+  background-color: transparent;
+  bottom: 70px;
+  height: 61px;
+  letter-spacing: 0.00px;
+  line-height: 49px;
+  opacity: 0.5;
+  position: absolute;
+  right: calc(40.45% - 15px);
+  text-align: center;
+  white-space: nowrap;
+  width: 36px;
 }
 :root {
   --black: rgba(0,0,0,0.6);
   --dove-gray: rgba(112,112,112,1.0);
+  --picton-blue: rgba(74,193,240,1.0);
   --white: rgba(255,255,255,1.0);
 }

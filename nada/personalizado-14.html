@@ -7,6 +7,7 @@
     <meta name="og:type" content="website" />
     <meta name="twitter:card" content="photo" />
     <link rel="stylesheet" type="text/css" href="css/personalizado-14.css" />
+    <link rel="stylesheet" type="text/css" href="css/personalizado-15.css" />
     <style>
       @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:700");
 
@@ -180,7 +181,111 @@
   <body style="margin: 0; background: rgba(255, 255, 255, 1)">
     <input type="hidden" id="anPageName" name="page" value="personalizado-14" />
     <div class="anima-container-center-horizontal">
-      <div class="personalizado-14 anima-screen" onclick="window.open('personalizado-15.html', '_self');"></div>
+      <div class="personalizado-14 anima-screen" onclick="window.open('http://', '_self');">
+        <div class="overlap-group-C61RwL">
+          <img class="elipse-1-4eduM0" src="img/elipse-1-1@1x.png" />
+          <img class="elipse-2-4eduM0" src="img/elipse-2-1@1x.png" />
+          <div class="x1-4eduM0 montserratalternates-bold-picton-blue-49px">1</div>
+          <img class="group-107-4eduM0" src="img/group-107-1@1x.png" />
+          <img class="elipse-3-4eduM0" src="img/elipse-3-1@1x.png" />
+          <img class="elipse-4-4eduM0" src="img/elipse-4-1@1x.png" />
+          <div class="x2-4eduM0 montserratalternates-bold-picton-blue-49px">2</div>
+          <a
+            href="javascript:AnimaShowOverlay('personalizado-15', 'anima-animate-appear');"
+            onclick="window.event.stopPropagation()"
+          >
+            <div class="retangulo-58-4eduM0"></div
+          ></a>
+        </div>
+        <div class="auto-flex-C61RwL">
+          <div class="overlap-group1-fhuxN3">
+            <img class="elipse-5-GtdoDw" src="img/elipse-3-1@1x.png" />
+            <img class="elipse-6-GtdoDw" src="img/elipse-4-1@1x.png" />
+            <div class="x3-GtdoDw montserratalternates-bold-picton-blue-49px">3</div>
+          </div>
+          <div class="overlap-group2-fhuxN3">
+            <img class="elipse-7-SJVP2h" src="img/elipse-3-1@1x.png" />
+            <img class="elipse-8-SJVP2h" src="img/elipse-4-1@1x.png" />
+            <div class="x4-SJVP2h montserratalternates-bold-picton-blue-49px">4</div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div id="overlay-personalizado-15" class="anima-overlay" style="min-height: 990px">
+      <div class="anima-container-center-horizontal">
+        <div class="personalizado-15 anima-screen" onclick="window.open('javascript:history.back()', '_self');">
+          <div class="grupo-60-C61RwL">
+            <img class="elipse-1-1BPPSw" src="img/elipse-1-1@1x.png" />
+            <img class="elipse-2-1BPPSw" src="img/elipse-2-1@1x.png" />
+            <div class="x1-1BPPSw montserratalternates-bold-picton-blue-49px">1</div>
+            <img class="group-107-1BPPSw" src="img/group-107-1@1x.png" />
+            <img class="elipse-3-1BPPSw" src="img/elipse-3-1@1x.png" />
+            <img class="elipse-4-1BPPSw" src="img/elipse-4-1@1x.png" />
+            <div class="x2-1BPPSw montserratalternates-bold-picton-blue-49px">2</div>
+            <img class="elipse-5-1BPPSw" src="img/elipse-3-1@1x.png" />
+            <img class="elipse-6-1BPPSw" src="img/elipse-4-1@1x.png" />
+            <div class="x3-1BPPSw montserratalternates-bold-picton-blue-49px">3</div>
+            <img class="elipse-7-1BPPSw" src="img/elipse-3-1@1x.png" />
+            <img class="elipse-8-1BPPSw" src="img/elipse-4-1@1x.png" />
+            <div class="x4-1BPPSw montserratalternates-bold-picton-blue-49px">4</div>
+            <div class="retangulo-66-1BPPSw border-class-1"></div>
+          </div>
+          <img class="surface-pro-3-136-C61RwL" src="img/surface-pro-3---136@1x.png" />
+          <a href="personalizado-16.html" onclick="window.event.stopPropagation()">
+            <div class="retangulo-20-C61RwL"></div
+          ></a>
+        </div>
+      </div>
+    </div>
+    <script>
+      var overlay_id = "overlay-personalizado-15";
+      document.getElementById(overlay_id).addEventListener(
+        "click",
+        function (event) {
+          var e = event || window.event;
+          var clickedDiv = e.toElement || e.target;
+          if (clickedDiv.parentElement.id == overlay_id) {
+            AnimaHideOverlay("personalizado-15", "anima-animate-disappear");
+          }
+        },
+        false
+      );
+    </script>
+    <script>
+      AnimaShowOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("anima-animate") == -1) {
+          document.getElementById(overlayName).className =
+            document.getElementById(overlayName).className + " " + animationName;
+        }
+        if (window.AnimaloadAsyncSrc != undefined) {
+          AnimaloadAsyncSrc();
+        }
+      };
+      AnimaHideOverlay = function (overlayName, animationName) {
+        overlayName = "overlay-" + overlayName;
+        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var last = cssClasses.slice(-1)[0];
+        if (last.lastIndexOf("anima-animate") != -1) {
+          cssClasses.splice(-1);
+          cssClasses.push(animationName);
+          document.getElementById(overlayName).className = cssClasses.join(" ");
+
+          cssClasses.splice(-1);
+          setTimeout(function () {
+            document.getElementById(overlayName).className = cssClasses.join(" ");
+          }, 1100);
+        }
+        var vids = document.getElementsByTagName("video");
+        if (vids) {
+          for (var i = 0; i < vids.length; i++) {
+            var video = vids.item(i);
+            video.pause();
+          }
+        }
+      };
+    </script>
   </body>
 </html>

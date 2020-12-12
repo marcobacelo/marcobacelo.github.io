@@ -1,5 +1,8 @@
 /* screen - personalizado-4 */
 
+.border-class-1 {
+  border: 1px solid var(--dove-gray);
+}
 .montserratalternates-bold-dove-gray-22px {
   color: var(--dove-gray);
   font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
@@ -7,90 +10,136 @@
   font-style: normal;
   font-weight: 700;
 }
+.montserratalternates-bold-picton-blue-49px {
+  color: var(--picton-blue);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 700;
+}
 .personalizado-4 {
+  align-items: flex-start;
   background-color: var(--white);
   background-image: url(../img/surface-pro-3---15@1x.png);
   background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
   height: 990px;
+  justify-content: flex-start;
+  min-width: 1440px;
+  padding: 0 51px;
   position: relative;
-  width: 1440px;
+  width: auto;
 }
-.personalizado-4 .insira-seu-nome-C61RwL {
+.personalizado-4 .auto-flex-C61RwL {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 23px;
+  margin-top: 37px;
+  min-height: 477px;
+  position: relative;
+  width: 725px;
+}
+.personalizado-4 .insira-seu-nome-m4FBGj {
   background-color: transparent;
   border: 0;
   height: 29px;
-  left: 202px;
+  left: 15px;
   letter-spacing: 0.00px;
   line-height: 22px;
   padding: 0;
   position: absolute;
   resize: none;
   text-align: left;
-  top: 339px;
+  top: 20px;
   width: 519px;
 }
-.personalizado-4 .insira-seu-nome-C61RwL::placeholder {
+.personalizado-4 .insira-seu-nome-m4FBGj::placeholder {
   color: rgba(112,112,112,0.6);
 }
-.personalizado-4 .insira-sua-idade-C61RwL {
+.personalizado-4 .insira-sua-idade-GtdoDw {
   background-color: transparent;
   border: 0;
   height: 29px;
-  left: 202px;
+  left: 15px;
   letter-spacing: 0.00px;
   line-height: 22px;
   padding: 0;
   position: absolute;
   resize: none;
   text-align: left;
-  top: 468px;
+  top: 20px;
   width: 520px;
 }
-.personalizado-4 .insira-sua-idade-C61RwL::placeholder {
+.personalizado-4 .insira-sua-idade-GtdoDw::placeholder {
   color: rgba(112,112,112,0.6);
+}
+.personalizado-4 .overlap-group-fhuxN3 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 66px;
+  margin-top: 128px;
+  position: relative;
+  width: 541px;
+}
+.personalizado-4 .overlap-group1-fhuxN3 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 66px;
+  margin-top: 63px;
+  position: relative;
+  width: 541px;
 }
 .personalizado-4 .retangulo-11-C61RwL {
   background-color: transparent;
+  flex-shrink: 0;
   height: 112px;
-  left: 51px;
-  position: absolute;
-  top: 0px;
+  position: relative;
   width: 113px;
 }
-.personalizado-4 .retangulo-12-C61RwL {
+.personalizado-4 .retangulo-12-fhuxN3 {
+  align-self: flex-end;
   background-color: transparent;
+  flex-shrink: 0;
   height: 154px;
-  left: 522px;
-  position: absolute;
-  top: 37px;
+  position: relative;
   width: 390px;
 }
 .personalizado-4 .retangulo-13-C61RwL {
   background-color: transparent;
+  flex-shrink: 0;
   height: 154px;
-  left: 967px;
-  position: absolute;
-  top: 37px;
+  margin-left: 55px;
+  margin-top: 37px;
+  position: relative;
   width: 384px;
 }
-.personalizado-4 .retangulo-2-C61RwL {
+.personalizado-4 .retangulo-2-m4FBGj {
   background-color: var(--white);
   height: 66px;
-  left: 187px;
+  left: 0px;
   position: absolute;
-  top: 319px;
+  top: 0px;
   width: 541px;
 }
-.personalizado-4 .retangulo-3-C61RwL {
+.personalizado-4 .retangulo-3-GtdoDw {
   background-color: var(--white);
   height: 66px;
-  left: 187px;
+  left: 0px;
   position: absolute;
-  top: 448px;
+  top: 0px;
   width: 541px;
 }
 :root {
   --black: rgba(0,0,0,0.6);
   --dove-gray: rgba(112,112,112,1.0);
+  --picton-blue: rgba(74,193,240,1.0);
   --white: rgba(255,255,255,1.0);
 }

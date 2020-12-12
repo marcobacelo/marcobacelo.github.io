@@ -1,5 +1,8 @@
 /* screen - personalizado-29 */
 
+.border-class-1 {
+  border: 1px solid var(--dove-gray);
+}
 .montserratalternates-bold-dove-gray-22px {
   color: var(--dove-gray);
   font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
@@ -7,40 +10,56 @@
   font-style: normal;
   font-weight: 700;
 }
+.montserratalternates-bold-picton-blue-49px {
+  color: var(--picton-blue);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 700;
+}
 .personalizado-29 {
+  align-items: flex-start;
   background-color: var(--white);
-  background-image: url(../img/surface-pro-3---36@1x.png);
+  background-image: url(../img/surface-pro-3---36-1@1x.png);
   background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
   height: 990px;
+  justify-content: flex-start;
+  min-width: 1440px;
+  padding: 0 18px;
   position: relative;
-  width: 1440px;
+  width: auto;
 }
 .personalizado-29 .caminho-1-C61RwL {
   background-color: transparent;
+  flex-shrink: 0;
   height: 454px;
-  left: 240px;
-  position: absolute;
-  top: 381px;
+  margin-left: 71px;
+  margin-top: 381.27px;
+  position: relative;
   width: 464px;
 }
 .personalizado-29 .retangulo-22-C61RwL {
   background-color: transparent;
+  flex-shrink: 0;
   height: 118px;
-  left: 51px;
-  position: absolute;
-  top: 0px;
+  position: relative;
   width: 118px;
 }
 .personalizado-29 .retangulo-23-C61RwL {
   background-color: transparent;
+  flex-shrink: 0;
   height: 95px;
-  left: 1154px;
-  position: absolute;
-  top: 23px;
+  margin-left: 449px;
+  margin-top: 23px;
+  position: relative;
   width: 268px;
 }
 :root {
   --black: rgba(0,0,0,0.6);
   --dove-gray: rgba(112,112,112,1.0);
+  --picton-blue: rgba(74,193,240,1.0);
   --white: rgba(255,255,255,1.0);
 }

@@ -1,5 +1,8 @@
 /* screen - personalizado-76 */
 
+.border-class-1 {
+  border: 1px solid var(--dove-gray);
+}
 .montserratalternates-bold-dove-gray-22px {
   color: var(--dove-gray);
   font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
@@ -7,48 +10,90 @@
   font-style: normal;
   font-weight: 700;
 }
+.montserratalternates-bold-picton-blue-49px {
+  color: var(--picton-blue);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 700;
+}
 .personalizado-76 {
+  align-items: flex-start;
   background-color: var(--white);
   background-image: url(../img/surface-pro-3---161@1x.png);
   background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
   height: 990px;
+  justify-content: flex-start;
+  min-width: 1440px;
+  padding: 0 17px;
   position: relative;
-  width: 1440px;
+  width: auto;
 }
-.personalizado-76 .retangulo-22-C61RwL {
+.personalizado-76 .auto-flex-C61RwL {
+  align-items: center;
   background-color: transparent;
-  height: 118px;
-  left: 51px;
-  position: absolute;
-  top: 0px;
-  width: 118px;
-}
-.personalizado-76 .retangulo-23-C61RwL {
-  background-color: transparent;
-  height: 95px;
-  left: 1154px;
-  position: absolute;
-  top: 23px;
-  width: 268px;
-}
-.personalizado-76 .retangulo-29-C61RwL {
-  background-color: transparent;
-  height: 202px;
-  left: 1175px;
-  position: absolute;
-  top: 762px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 964px;
+  position: relative;
   width: 247px;
 }
-.personalizado-76 .retangulo-30-C61RwL {
+.personalizado-76 .auto-flex1-C61RwL {
+  align-items: flex-end;
   background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 890px;
+  margin-top: 23px;
+  min-height: 941px;
+  position: relative;
+  width: 268px;
+}
+.personalizado-76 .retangulo-22-fhuxN3 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 118px;
+  margin-right: 61.0px;
+  position: relative;
+  width: 118px;
+}
+.personalizado-76 .retangulo-23-uxzUmT {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 95px;
+  position: relative;
+  width: 268px;
+}
+.personalizado-76 .retangulo-29-uxzUmT {
+  background-color: transparent;
+  flex-shrink: 0;
   height: 202px;
-  left: 17px;
-  position: absolute;
-  top: 762px;
+  margin-top: 644px;
+  position: relative;
+  width: 247px;
+}
+.personalizado-76 .retangulo-30-fhuxN3 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 202px;
+  margin-top: 644px;
+  position: relative;
   width: 247px;
 }
 :root {
   --black: rgba(0,0,0,0.6);
   --dove-gray: rgba(112,112,112,1.0);
+  --picton-blue: rgba(74,193,240,1.0);
   --white: rgba(255,255,255,1.0);
 }

@@ -1,0 +1,57 @@
+/* screen - personalizado-100 */
+
+.border-class-1 {
+  border: 1px solid var(--dove-gray);
+}
+.montserratalternates-bold-dove-gray-22px {
+  color: var(--dove-gray);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+}
+.montserratalternates-bold-picton-blue-49px {
+  color: var(--picton-blue);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 700;
+}
+.personalizado-100 {
+  background-color: var(--black);
+  background-image: url(../img/surface-pro-3---33-1@1x.png);
+  background-size: 100% 100%;
+  height: 990px;
+  position: relative;
+  width: 1440px;
+}
+.personalizado-100 .group-115-C61RwL {
+  background-color: transparent;
+  height: 407px;
+  left: 327px;
+  position: absolute;
+  top: 292px;
+  width: 787px;
+}
+.personalizado-100 .retangulo-64-C61RwL {
+  background-color: transparent;
+  height: 117px;
+  left: 505px;
+  position: absolute;
+  top: 582px;
+  width: 448px;
+}
+.personalizado-100 .retangulo-80-C61RwL {
+  background-color: var(--black);
+  height: 990px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1440px;
+}
+:root {
+  --black: rgba(0,0,0,0.6);
+  --dove-gray: rgba(112,112,112,1.0);
+  --picton-blue: rgba(74,193,240,1.0);
+  --white: rgba(255,255,255,1.0);
+}

@@ -1,5 +1,8 @@
 /* screen - personalizado-53 */
 
+.border-class-1 {
+  border: 1px solid var(--dove-gray);
+}
 .montserratalternates-bold-dove-gray-22px {
   color: var(--dove-gray);
   font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
@@ -7,32 +10,48 @@
   font-style: normal;
   font-weight: 700;
 }
+.montserratalternates-bold-picton-blue-49px {
+  color: var(--picton-blue);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 700;
+}
 .personalizado-53 {
+  align-items: flex-start;
   background-color: var(--white);
   background-image: url(../img/surface-pro-3---250@1x.png);
   background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
   height: 990px;
+  justify-content: flex-start;
+  min-width: 1440px;
+  padding: 0 17px;
   position: relative;
-  width: 1440px;
+  width: auto;
 }
 .personalizado-53 .retangulo-29-C61RwL {
   background-color: transparent;
+  flex-shrink: 0;
   height: 202px;
-  left: 1175px;
-  position: absolute;
-  top: 762px;
+  margin-left: 911px;
+  margin-top: 762px;
+  position: relative;
   width: 247px;
 }
 .personalizado-53 .retangulo-30-C61RwL {
   background-color: transparent;
+  flex-shrink: 0;
   height: 202px;
-  left: 17px;
-  position: absolute;
-  top: 762px;
+  margin-top: 762px;
+  position: relative;
   width: 247px;
 }
 :root {
   --black: rgba(0,0,0,0.6);
   --dove-gray: rgba(112,112,112,1.0);
+  --picton-blue: rgba(74,193,240,1.0);
   --white: rgba(255,255,255,1.0);
 }

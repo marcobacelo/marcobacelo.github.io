@@ -7,7 +7,6 @@
     <meta name="og:type" content="website" />
     <meta name="twitter:card" content="photo" />
     <link rel="stylesheet" type="text/css" href="css/personalizado-139.css" />
-    <link rel="stylesheet" type="text/css" href="css/personalizado-150.css" />
     <style>
       @import url("https://fonts.googleapis.com/css?family=Montserrat+Alternates:700");
 
@@ -182,101 +181,10 @@
     <input type="hidden" id="anPageName" name="page" value="personalizado-139" />
     <div class="anima-container-center-horizontal">
       <div class="personalizado-139 anima-screen" onclick="window.open('javascript:history.back()', '_self');">
-        <a
-          href="javascript:AnimaShowOverlay('personalizado-150', 'anima-animate-appear');"
-          onclick="window.event.stopPropagation()"
-        >
+        <a href="personalizado-150.html" onclick="window.event.stopPropagation()">
           <div class="retangulo-38-C61RwL"></div
         ></a>
       </div>
     </div>
-    <div id="overlay-personalizado-150" class="anima-overlay" style="min-height: 990px">
-      <div class="anima-container-center-horizontal">
-        <div class="personalizado-150 anima-screen" onclick="window.open('javascript:history.back()', '_self');">
-          <div class="retangulo-39-C61RwL"></div>
-          <input
-            class="selecione-a-cor-C61RwL montserratalternates-bold-dove-gray-22px"
-            name="selecione-a-cor2-1"
-            placeholder=""
-            type="text"
-            required
-          />
-          <a
-            href="javascript:AnimaShowOverlay('personalizado-161', 'anima-animate-appear');"
-            onclick="window.event.stopPropagation()"
-          >
-            <div class="retangulo-40-C61RwL"></div
-          ></a>
-          <a
-            href="javascript:AnimaShowOverlay('personalizado-172', 'anima-animate-appear');"
-            onclick="window.event.stopPropagation()"
-          >
-            <div class="retangulo-41-C61RwL"></div
-          ></a>
-          <a
-            href="javascript:AnimaShowOverlay('personalizado-183', 'anima-animate-appear');"
-            onclick="window.event.stopPropagation()"
-          >
-            <div class="retangulo-42-C61RwL"></div
-          ></a>
-          <a
-            href="javascript:AnimaShowOverlay('personalizado-19', 'anima-animate-appear');"
-            onclick="window.event.stopPropagation()"
-          >
-            <div class="retangulo-43-C61RwL"></div
-          ></a>
-        </div>
-      </div>
-    </div>
-    <script>
-      var overlay_id = "overlay-personalizado-150";
-      document.getElementById(overlay_id).addEventListener(
-        "click",
-        function (event) {
-          var e = event || window.event;
-          var clickedDiv = e.toElement || e.target;
-          if (clickedDiv.parentElement.id == overlay_id) {
-            AnimaHideOverlay("personalizado-150", "anima-animate-disappear");
-          }
-        },
-        false
-      );
-    </script>
-    <script>
-      AnimaShowOverlay = function (overlayName, animationName) {
-        overlayName = "overlay-" + overlayName;
-        var cssClasses = document.getElementById(overlayName).className.split(" ");
-        var last = cssClasses.slice(-1)[0];
-        if (last.lastIndexOf("anima-animate") == -1) {
-          document.getElementById(overlayName).className =
-            document.getElementById(overlayName).className + " " + animationName;
-        }
-        if (window.AnimaloadAsyncSrc != undefined) {
-          AnimaloadAsyncSrc();
-        }
-      };
-      AnimaHideOverlay = function (overlayName, animationName) {
-        overlayName = "overlay-" + overlayName;
-        var cssClasses = document.getElementById(overlayName).className.split(" ");
-        var last = cssClasses.slice(-1)[0];
-        if (last.lastIndexOf("anima-animate") != -1) {
-          cssClasses.splice(-1);
-          cssClasses.push(animationName);
-          document.getElementById(overlayName).className = cssClasses.join(" ");
-
-          cssClasses.splice(-1);
-          setTimeout(function () {
-            document.getElementById(overlayName).className = cssClasses.join(" ");
-          }, 1100);
-        }
-        var vids = document.getElementsByTagName("video");
-        if (vids) {
-          for (var i = 0; i < vids.length; i++) {
-            var video = vids.item(i);
-            video.pause();
-          }
-        }
-      };
-    </script>
   </body>
 </html>

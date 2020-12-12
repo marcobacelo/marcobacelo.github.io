@@ -1,5 +1,8 @@
 /* screen - personalizado-130 */
 
+.border-class-1 {
+  border: 1px solid var(--dove-gray);
+}
 .montserratalternates-bold-dove-gray-22px {
   color: var(--dove-gray);
   font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
@@ -7,64 +10,100 @@
   font-style: normal;
   font-weight: 700;
 }
+.montserratalternates-bold-picton-blue-49px {
+  color: var(--picton-blue);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 700;
+}
 .personalizado-130 {
+  align-items: center;
   background-color: var(--white);
-  background-image: url(../img/surface-pro-3---244-1@1x.png);
+  background-image: url(../img/surface-pro-3---244@1x.png);
   background-size: 100% 100%;
-  height: 990px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 990px;
   position: relative;
   width: 1440px;
 }
-.personalizado-130 .retangulo-22-C61RwL {
+.personalizado-130 .auto-flex-C61RwL {
+  align-items: flex-end;
   background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
   height: 118px;
-  left: 51px;
-  position: absolute;
-  top: 0px;
-  width: 118px;
+  justify-content: flex-start;
+  margin-left: 33.0px;
+  min-width: 1371px;
+  position: relative;
+  width: auto;
 }
-.personalizado-130 .retangulo-23-C61RwL {
+.personalizado-130 .overlap-group-C61RwL {
   background-color: transparent;
-  height: 95px;
-  left: 1154px;
-  position: absolute;
-  top: 23px;
-  width: 268px;
-}
-.personalizado-130 .retangulo-29-C61RwL {
-  background-color: transparent;
-  height: 202px;
-  left: 1175px;
-  position: absolute;
-  top: 762px;
-  width: 247px;
-}
-.personalizado-130 .retangulo-30-C61RwL {
-  background-color: transparent;
-  height: 202px;
-  left: 17px;
-  position: absolute;
-  top: 762px;
-  width: 247px;
-}
-.personalizado-130 .retangulo-45-C61RwL {
-  background-color: transparent;
-  height: 664px;
-  left: -1px;
-  position: absolute;
-  top: 118px;
+  flex-shrink: 0;
+  height: 846px;
+  margin-right: 1.0px;
+  margin-top: 0px;
+  position: relative;
   width: 1441px;
 }
-.personalizado-130 .retangulo-46-C61RwL {
+.personalizado-130 .retangulo-22-fhuxN3 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 118px;
+  position: relative;
+  width: 118px;
+}
+.personalizado-130 .retangulo-23-fhuxN3 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 95px;
+  margin-left: 985px;
+  position: relative;
+  width: 268px;
+}
+.personalizado-130 .retangulo-29-4eduM0 {
+  background-color: transparent;
+  height: 202px;
+  left: 1176px;
+  position: absolute;
+  top: 644px;
+  width: 247px;
+}
+.personalizado-130 .retangulo-30-4eduM0 {
+  background-color: transparent;
+  height: 202px;
+  left: 18px;
+  position: absolute;
+  top: 644px;
+  width: 247px;
+}
+.personalizado-130 .retangulo-45-4eduM0 {
+  background-color: transparent;
+  height: 664px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 1441px;
+}
+.personalizado-130 .retangulo-46-4eduM0 {
   background-color: transparent;
   height: 182px;
-  left: 213px;
+  left: 214px;
   position: absolute;
-  top: 782px;
+  top: 664px;
   width: 1004px;
 }
 :root {
   --black: rgba(0,0,0,0.6);
   --dove-gray: rgba(112,112,112,1.0);
+  --picton-blue: rgba(74,193,240,1.0);
   --white: rgba(255,255,255,1.0);
 }

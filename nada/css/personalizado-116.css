@@ -1,5 +1,8 @@
 /* screen - personalizado-116 */
 
+.border-class-1 {
+  border: 1px solid var(--dove-gray);
+}
 .montserratalternates-bold-dove-gray-22px {
   color: var(--dove-gray);
   font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
@@ -7,64 +10,122 @@
   font-style: normal;
   font-weight: 700;
 }
+.montserratalternates-bold-picton-blue-49px {
+  color: var(--picton-blue);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 700;
+}
 .personalizado-116 {
+  align-items: flex-start;
   background-color: var(--white);
-  background-image: url(../img/surface-pro-3---107@1x.png);
+  background-image: url(../img/surface-pro-3---107-1@1x.png);
   background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
   height: 990px;
+  justify-content: flex-start;
+  min-width: 1440px;
+  padding: 0 17px;
   position: relative;
-  width: 1440px;
+  width: auto;
 }
-.personalizado-116 .retangulo-22-C61RwL {
+.personalizado-116 .auto-flex-C61RwL {
+  align-items: center;
   background-color: transparent;
-  height: 118px;
-  left: 51px;
-  position: absolute;
-  top: 0px;
-  width: 118px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 964px;
+  position: relative;
+  width: 247px;
 }
-.personalizado-116 .retangulo-23-C61RwL {
+.personalizado-116 .auto-flex1-C61RwL {
+  align-items: flex-end;
   background-color: transparent;
-  height: 95px;
-  left: 1154px;
-  position: absolute;
-  top: 23px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 890px;
+  margin-top: 23px;
+  min-height: 941px;
+  position: relative;
   width: 268px;
 }
-.personalizado-116 .retangulo-29-C61RwL {
+.personalizado-116 .overlap-group-uxzUmT {
   background-color: transparent;
+  flex-shrink: 0;
   height: 202px;
-  left: 1175px;
-  position: absolute;
-  top: 762px;
+  margin-top: 644px;
+  position: relative;
   width: 247px;
 }
-.personalizado-116 .retangulo-30-C61RwL {
+.personalizado-116 .overlap-group1-fhuxN3 {
   background-color: transparent;
+  flex-shrink: 0;
   height: 202px;
-  left: 17px;
-  position: absolute;
-  top: 762px;
+  margin-top: 644px;
+  position: relative;
   width: 247px;
 }
-.personalizado-116 .retangulo-45-C61RwL {
+.personalizado-116 .retangulo-22-fhuxN3 {
   background-color: transparent;
-  height: 664px;
-  left: -1px;
-  position: absolute;
-  top: 118px;
-  width: 1441px;
+  flex-shrink: 0;
+  height: 118px;
+  margin-right: 61.0px;
+  position: relative;
+  width: 118px;
 }
-.personalizado-116 .retangulo-46-C61RwL {
+.personalizado-116 .retangulo-23-uxzUmT {
   background-color: transparent;
-  height: 182px;
-  left: 213px;
+  flex-shrink: 0;
+  height: 95px;
+  position: relative;
+  width: 268px;
+}
+.personalizado-116 .retangulo-29-NOBY2w {
+  background-color: transparent;
+  height: 202px;
+  left: 0px;
   position: absolute;
-  top: 782px;
-  width: 1004px;
+  top: 0px;
+  width: 247px;
+}
+.personalizado-116 .retangulo-29-kwy4Oh {
+  background-color: transparent;
+  height: 202px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 247px;
+}
+.personalizado-116 .retangulo-30-GtdoDw {
+  background-color: transparent;
+  height: 202px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 247px;
+}
+.personalizado-116 .retangulo-30-RMWSf2 {
+  background-color: transparent;
+  height: 202px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 247px;
 }
 :root {
   --black: rgba(0,0,0,0.6);
   --dove-gray: rgba(112,112,112,1.0);
+  --picton-blue: rgba(74,193,240,1.0);
   --white: rgba(255,255,255,1.0);
 }

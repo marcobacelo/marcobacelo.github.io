@@ -1,5 +1,8 @@
 /* screen - personalizado-77 */
 
+.border-class-1 {
+  border: 1px solid var(--dove-gray);
+}
 .montserratalternates-bold-dove-gray-22px {
   color: var(--dove-gray);
   font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
@@ -7,40 +10,143 @@
   font-style: normal;
   font-weight: 700;
 }
-.personalizado-77 {
-  background-color: var(--white);
-  background-image: url(../img/surface-pro-3---37@1x.png);
-  background-size: 100% 100%;
-  height: 990px;
-  position: relative;
-  width: 1440px;
+.montserratalternates-bold-picton-blue-49px {
+  color: var(--picton-blue);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 700;
 }
-.personalizado-77 .caminho-2-C61RwL {
+.personalizado-77 {
+  align-items: flex-start;
+  background-color: var(--white);
+  background-image: url(../img/surface-pro-3---37--2--1@1x.png);
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  height: 990px;
+  justify-content: flex-start;
+  min-width: 1440px;
+  position: relative;
+  width: auto;
+}
+.personalizado-77 .auto-flex-uxzUmT {
+  align-items: flex-start;
   background-color: transparent;
-  height: 678px;
-  left: 0px;
-  position: absolute;
-  top: 314px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 993px;
+  position: relative;
   width: 342px;
 }
-.personalizado-77 .retangulo-22-C61RwL {
+.personalizado-77 .auto-flex1-C61RwL {
+  align-items: center;
   background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 993px;
+  justify-content: flex-start;
+  min-width: 950px;
+  position: relative;
+  width: auto;
+}
+.personalizado-77 .auto-flex2-mCninq {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 667px;
+  justify-content: flex-start;
+  margin-top: 95px;
+  min-width: 329px;
+  position: relative;
+  width: auto;
+}
+.personalizado-77 .auto-flex3-C61RwL {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 164px;
+  margin-top: 23px;
+  min-height: 972px;
+  position: relative;
+  width: 329px;
+}
+.personalizado-77 .caminho-2-c24oYb {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 678px;
+  margin-top: 196px;
+  position: relative;
+  width: 342px;
+}
+.personalizado-77 .caminho-3033-uxzUmT {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 47px;
+  margin-left: 373px;
+  margin-top: 223.42px;
+  position: relative;
+  width: 235px;
+}
+.personalizado-77 .caminho-3034-mCninq {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 89px;
+  margin-left: 8.58px;
+  margin-top: 25px;
+  position: relative;
+  width: 144px;
+}
+.personalizado-77 .caminho-3035-QxkHfZ {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 427px;
+  position: relative;
+  width: 173px;
+}
+.personalizado-77 .caminho-3036-QxkHfZ {
+  align-self: flex-end;
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 295px;
+  margin-left: 67px;
+  position: relative;
+  width: 88px;
+}
+.personalizado-77 .retangulo-22-c24oYb {
+  background-color: transparent;
+  flex-shrink: 0;
   height: 118px;
-  left: 51px;
-  position: absolute;
-  top: 0px;
+  margin-left: 51px;
+  position: relative;
   width: 118px;
 }
-.personalizado-77 .retangulo-23-C61RwL {
+.personalizado-77 .retangulo-23-mCninq {
   background-color: transparent;
+  flex-shrink: 0;
   height: 95px;
-  left: 1154px;
-  position: absolute;
-  top: 23px;
+  margin-left: 19.69px;
+  position: relative;
   width: 268px;
 }
 :root {
   --black: rgba(0,0,0,0.6);
   --dove-gray: rgba(112,112,112,1.0);
+  --picton-blue: rgba(74,193,240,1.0);
   --white: rgba(255,255,255,1.0);
 }

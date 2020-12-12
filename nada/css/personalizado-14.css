@@ -1,5 +1,8 @@
 /* screen - personalizado-14 */
 
+.border-class-1 {
+  border: 1px solid var(--dove-gray);
+}
 .montserratalternates-bold-dove-gray-22px {
   color: var(--dove-gray);
   font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
@@ -7,16 +10,198 @@
   font-style: normal;
   font-weight: 700;
 }
+.montserratalternates-bold-picton-blue-49px {
+  color: var(--picton-blue);
+  font-family: 'Montserrat Alternates', Helvetica, Arial, serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 700;
+}
 .personalizado-14 {
+  align-items: flex-start;
   background-color: var(--white);
-  background-image: url(../img/surface-pro-3---135@1x.png);
+  background-image: url(../img/surface-pro-3---135-1@1x.png);
   background-size: 100% 100%;
-  height: 990px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 990px;
   position: relative;
   width: 1440px;
+}
+.personalizado-14 .auto-flex-C61RwL {
+  align-items: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  height: 108px;
+  justify-content: flex-start;
+  margin-left: 30px;
+  margin-top: 282px;
+  min-width: 877px;
+  position: relative;
+  width: auto;
+}
+.personalizado-14 .elipse-1-4eduM0 {
+  background-color: transparent;
+  height: 108px;
+  left: 30px;
+  position: absolute;
+  top: 30px;
+  width: 108px;
+}
+.personalizado-14 .elipse-2-4eduM0 {
+  background-color: transparent;
+  height: 90px;
+  left: 39px;
+  position: absolute;
+  top: 39px;
+  width: 90px;
+}
+.personalizado-14 .elipse-3-4eduM0 {
+  background-color: transparent;
+  height: 108px;
+  left: 799px;
+  position: absolute;
+  top: 30px;
+  width: 108px;
+}
+.personalizado-14 .elipse-4-4eduM0 {
+  background-color: transparent;
+  height: 90px;
+  left: 808px;
+  position: absolute;
+  top: 39px;
+  width: 90px;
+}
+.personalizado-14 .elipse-5-GtdoDw {
+  background-color: transparent;
+  height: 108px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 108px;
+}
+.personalizado-14 .elipse-6-GtdoDw {
+  background-color: transparent;
+  height: 90px;
+  left: 9px;
+  position: absolute;
+  top: 9px;
+  width: 90px;
+}
+.personalizado-14 .elipse-7-SJVP2h {
+  background-color: transparent;
+  height: 108px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 108px;
+}
+.personalizado-14 .elipse-8-SJVP2h {
+  background-color: transparent;
+  height: 90px;
+  left: 9px;
+  position: absolute;
+  top: 9px;
+  width: 90px;
+}
+.personalizado-14 .group-107-4eduM0 {
+  background-color: transparent;
+  height: 108px;
+  left: 457px;
+  position: absolute;
+  top: 441px;
+  width: 560px;
+}
+.personalizado-14 .overlap-group-C61RwL {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 549px;
+  position: relative;
+  width: 1017px;
+}
+.personalizado-14 .overlap-group1-fhuxN3 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 108px;
+  position: relative;
+  width: 108px;
+}
+.personalizado-14 .overlap-group2-fhuxN3 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 108px;
+  margin-left: 661px;
+  position: relative;
+  width: 108px;
+}
+.personalizado-14 .retangulo-58-4eduM0 {
+  background-color: transparent;
+  height: 479px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  width: 720px;
+}
+.personalizado-14 .x1-4eduM0 {
+  background-color: transparent;
+  height: auto;
+  left: 74px;
+  letter-spacing: 0.00px;
+  line-height: 49px;
+  position: absolute;
+  text-align: left;
+  top: 58px;
+  white-space: nowrap;
+  width: auto;
+}
+.personalizado-14 .x2-4eduM0 {
+  background-color: transparent;
+  height: auto;
+  left: 839px;
+  letter-spacing: 0.00px;
+  line-height: 49px;
+  opacity: 0.5;
+  position: absolute;
+  text-align: center;
+  top: 58px;
+  white-space: nowrap;
+  width: auto;
+}
+.personalizado-14 .x3-GtdoDw {
+  background-color: transparent;
+  height: auto;
+  left: 39px;
+  letter-spacing: 0.00px;
+  line-height: 49px;
+  opacity: 0.5;
+  position: absolute;
+  text-align: center;
+  top: 28px;
+  white-space: nowrap;
+  width: auto;
+}
+.personalizado-14 .x4-SJVP2h {
+  background-color: transparent;
+  height: auto;
+  left: 37px;
+  letter-spacing: 0.00px;
+  line-height: 49px;
+  opacity: 0.5;
+  position: absolute;
+  text-align: center;
+  top: 28px;
+  white-space: nowrap;
+  width: auto;
 }
 :root {
   --black: rgba(0,0,0,0.6);
   --dove-gray: rgba(112,112,112,1.0);
+  --picton-blue: rgba(74,193,240,1.0);
   --white: rgba(255,255,255,1.0);
 }
