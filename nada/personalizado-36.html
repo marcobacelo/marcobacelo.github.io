@@ -182,7 +182,10 @@
   <body style="margin: 0; background: rgba(255, 255, 255, 1)">
     <input type="hidden" id="anPageName" name="page" value="personalizado-36" />
     <div class="anima-container-center-horizontal">
-      <div class="personalizado-36 anima-screen" onclick="window.open('personalizado-48.html', '_self');">
+      <div
+        class="personalizado-36 anima-screen"
+        onclick="window.open('personalizado-48.html', '_self');"
+      >
         <a
           href="javascript:AnimaShowOverlay('personalizado-39', 'anima-animate-appear');"
           onclick="window.event.stopPropagation()"
@@ -197,16 +200,29 @@
         ></a>
       </div>
     </div>
-    <div id="overlay-personalizado-17" class="anima-overlay" style="min-height: 990px">
+    <div
+      id="overlay-personalizado-17"
+      class="anima-overlay"
+      style="min-height: 990px"
+    >
       <div class="anima-container-center-horizontal">
-        <div class="personalizado-17 anima-screen" onclick="window.open('javascript:history.back()', '_self');">
+        <div
+          class="personalizado-17 anima-screen"
+          onclick="window.open('javascript:history.back()', '_self');"
+        >
           <div class="auto-flex2-C61RwL">
             <div class="auto-flex1-phANlq">
-              <a href="javascript:history.back()" onclick="window.event.stopPropagation()">
+              <a
+                href="javascript:history.back()"
+                onclick="window.event.stopPropagation()"
+              >
                 <div class="retangulo-8-1XBJaM"></div
               ></a>
               <div class="auto-flex-1XBJaM">
-                <a href="javascript:history.back()" onclick="window.event.stopPropagation()">
+                <a
+                  href="javascript:history.back()"
+                  onclick="window.event.stopPropagation()"
+                >
                   <div class="retangulo-9-dSU0qP"></div
                 ></a>
                 <a
@@ -217,11 +233,17 @@
                 ></a>
               </div>
             </div>
-            <a href="javascript:history.back()" onclick="window.event.stopPropagation()">
+            <a
+              href="javascript:history.back()"
+              onclick="window.event.stopPropagation()"
+            >
               <div class="retangulo-7-phANlq"></div
             ></a>
           </div>
-          <a href="javascript:history.back()" onclick="window.event.stopPropagation()">
+          <a
+            href="javascript:history.back()"
+            onclick="window.event.stopPropagation()"
+          >
             <div class="retangulo-6-C61RwL"></div
           ></a>
         </div>
@@ -241,13 +263,25 @@
         false
       );
     </script>
-    <div id="overlay-personalizado-39" class="anima-overlay" style="min-height: 990px">
+    <div
+      id="overlay-personalizado-39"
+      class="anima-overlay"
+      style="min-height: 990px"
+    >
       <div class="anima-container-center-horizontal">
-        <div class="personalizado-39 anima-screen" onclick="window.open('javascript:history.back()', '_self');">
-          <a href="javascript:history.back()" onclick="window.event.stopPropagation()">
+        <div
+          class="personalizado-39 anima-screen"
+          onclick="window.open('javascript:history.back()', '_self');"
+        >
+          <a
+            href="javascript:history.back()"
+            onclick="window.event.stopPropagation()"
+          >
             <div class="retangulo-24-C61RwL"></div
           ></a>
-          href="../index.html onclick="window.event.stopPropagation()"> <div class="retangulo-25-C61RwL"></div></a>
+          <a href="../index.html" onclick="window.event.stopPropagation()">
+            <div class="retangulo-25-C61RwL"></div
+          ></a>
         </div>
       </div>
     </div>
@@ -268,11 +302,15 @@
     <script>
       AnimaShowOverlay = function (overlayName, animationName) {
         overlayName = "overlay-" + overlayName;
-        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var cssClasses = document
+          .getElementById(overlayName)
+          .className.split(" ");
         var last = cssClasses.slice(-1)[0];
         if (last.lastIndexOf("anima-animate") == -1) {
           document.getElementById(overlayName).className =
-            document.getElementById(overlayName).className + " " + animationName;
+            document.getElementById(overlayName).className +
+            " " +
+            animationName;
         }
         if (window.AnimaloadAsyncSrc != undefined) {
           AnimaloadAsyncSrc();
@@ -280,7 +318,9 @@
       };
       AnimaHideOverlay = function (overlayName, animationName) {
         overlayName = "overlay-" + overlayName;
-        var cssClasses = document.getElementById(overlayName).className.split(" ");
+        var cssClasses = document
+          .getElementById(overlayName)
+          .className.split(" ");
         var last = cssClasses.slice(-1)[0];
         if (last.lastIndexOf("anima-animate") != -1) {
           cssClasses.splice(-1);
@@ -289,7 +329,9 @@
 
           cssClasses.splice(-1);
           setTimeout(function () {
-            document.getElementById(overlayName).className = cssClasses.join(" ");
+            document.getElementById(overlayName).className = cssClasses.join(
+              " "
+            );
           }, 1100);
         }
         var vids = document.getElementsByTagName("video");
