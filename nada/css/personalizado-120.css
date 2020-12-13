@@ -59,22 +59,16 @@
 }
 .personalizado-120 .selecione-a-cor-C61RwL {
   background-color: transparent;
-  border: 0;
-  height: 29px;
+  height: auto;
   left: 536px;
   letter-spacing: 0.00px;
   line-height: 22px;
   opacity: 0.47;
-  padding: 0;
   position: absolute;
-  resize: none;
   text-align: center;
   top: 760px;
   white-space: nowrap;
-  width: 371px;
-}
-.personalizado-120 .selecione-a-cor-C61RwL::placeholder {
-  color: rgba(112,112,112,0.6);
+  width: auto;
 }
 .personalizado-120 .surface-pro-3-298-C61RwL {
   background-color: transparent;
