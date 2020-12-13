@@ -18,22 +18,33 @@
   font-weight: 700;
 }
 .personalizado-144 {
-  align-items: flex-start;
   background-color: var(--white);
-  box-sizing: border-box;
-  display: inline-flex;
-  flex-direction: row;
   height: 990px;
-  justify-content: flex-start;
-  min-width: 1440px;
   position: relative;
-  width: auto;
+  width: 1440px;
+}
+.personalizado-144 .retangulo-22-C61RwL {
+  background-color: transparent;
+  height: 118px;
+  left: 51px;
+  position: absolute;
+  top: 0px;
+  width: 118px;
+}
+.personalizado-144 .retangulo-23-C61RwL {
+  background-color: transparent;
+  height: 95px;
+  left: 1154px;
+  position: absolute;
+  top: 23px;
+  width: 268px;
 }
 .personalizado-144 .surface-pro-3-33-C61RwL {
   background-color: transparent;
-  flex-shrink: 0;
   height: 990px;
-  position: relative;
+  left: 0px;
+  position: absolute;
+  top: 0px;
   width: 1440px;
 }
 :root {

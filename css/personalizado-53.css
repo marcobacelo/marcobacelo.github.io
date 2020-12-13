@@ -32,20 +32,62 @@
   position: relative;
   width: auto;
 }
-.personalizado-53 .retangulo-29-C61RwL {
+.personalizado-53 .auto-flex-C61RwL {
+  align-items: flex-end;
   background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   flex-shrink: 0;
-  height: 202px;
-  margin-left: 911px;
-  margin-top: 762px;
+  height: auto;
+  justify-content: flex-start;
+  margin-left: 890px;
+  margin-top: 23px;
+  min-height: 941px;
+  position: relative;
+  width: 268px;
+}
+.personalizado-53 .auto-flex1-C61RwL {
+  align-items: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  justify-content: flex-start;
+  min-height: 964px;
   position: relative;
   width: 247px;
 }
-.personalizado-53 .retangulo-30-C61RwL {
+.personalizado-53 .retangulo-22-uxzUmT {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 118px;
+  margin-right: 61.0px;
+  position: relative;
+  width: 118px;
+}
+.personalizado-53 .retangulo-23-fhuxN3 {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 95px;
+  position: relative;
+  width: 268px;
+}
+.personalizado-53 .retangulo-29-fhuxN3 {
   background-color: transparent;
   flex-shrink: 0;
   height: 202px;
-  margin-top: 762px;
+  margin-top: 644px;
+  position: relative;
+  width: 247px;
+}
+.personalizado-53 .retangulo-30-uxzUmT {
+  background-color: transparent;
+  flex-shrink: 0;
+  height: 202px;
+  margin-top: 644px;
   position: relative;
   width: 247px;
 }
