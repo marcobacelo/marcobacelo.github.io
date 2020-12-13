@@ -16357,14 +16357,6 @@
   transform: rotate(45.00deg);
   width: 7px;
 }
-.personalizado-143 .concrete-v-background-EETlAy {
-  background-color: transparent;
-  height: calc(100.00% + 385px);
-  left: -82px;
-  position: absolute;
-  top: -234px;
-  width: calc(100.00% + 97px);
-}
 .personalizado-143 .grupo-16-EnLymR {
   background-color: transparent;
   height: calc(100.00% - 26px);
@@ -16590,16 +16582,6 @@
   top: 0px;
   width: 1440px;
 }
-.personalizado-143 .grupo-de-mascara-2-ujpQOg {
-  background-color: transparent;
-  bottom: 0px;
-  height: 640px;
-  left: 0px;
-  opacity: 0.3;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-}
 .personalizado-143 .grupo-de-mascara-3-ujpQOg {
   background-color: transparent;
   bottom: 17px;
@@ -16611,7 +16593,7 @@
 }
 .personalizado-143 .grupo-de-mascara-4-ujpQOg {
   background-color: transparent;
-  bottom: 1px;
+  bottom: 0px;
   height: 191px;
   overflow: hidden;
   position: absolute;
