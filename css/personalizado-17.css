@@ -28,87 +28,17 @@
   height: 990px;
   justify-content: flex-start;
   min-width: 1440px;
+  padding: 0 399px;
   position: relative;
   width: auto;
 }
-.personalizado-17 .auto-flex-1XBJaM {
-  align-items: flex-end;
-  background-color: transparent;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  height: auto;
-  justify-content: flex-start;
-  margin-left: 0px;
-  min-height: 720px;
-  position: relative;
-  width: 686px;
-}
-.personalizado-17 .auto-flex1-phANlq {
-  align-items: flex-start;
-  background-color: transparent;
-  box-sizing: border-box;
-  display: inline-flex;
-  flex-direction: row;
-  flex-shrink: 0;
-  height: 817px;
-  justify-content: flex-start;
-  min-width: 1060px;
-  position: relative;
-  width: auto;
-}
-.personalizado-17 .auto-flex2-C61RwL {
-  align-items: flex-start;
-  background-color: transparent;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  height: auto;
-  justify-content: flex-start;
-  min-height: 990px;
-  position: relative;
-  width: 1060px;
-}
-.personalizado-17 .retangulo-59-dSU0qP {
+.personalizado-17 .retangulo-59-C61RwL {
   background-color: transparent;
   flex-shrink: 0;
   height: 88px;
-  margin-right: 19px;
-  margin-top: 475px;
+  margin-top: 632px;
   position: relative;
   width: 146px;
-}
-.personalizado-17 .retangulo-6-C61RwL {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 990px;
-  margin-left: 0px;
-  position: relative;
-  width: 380px;
-}
-.personalizado-17 .retangulo-7-phANlq {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 173px;
-  margin-top: 0px;
-  position: relative;
-  width: 1060px;
-}
-.personalizado-17 .retangulo-8-1XBJaM {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 817px;
-  position: relative;
-  width: 374px;
-}
-.personalizado-17 .retangulo-9-dSU0qP {
-  background-color: transparent;
-  flex-shrink: 0;
-  height: 157px;
-  position: relative;
-  width: 686px;
 }
 :root {
   --black: rgba(0,0,0,0.6);
