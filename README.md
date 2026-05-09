@@ -1,6 +1,6 @@
 # Hello! I'm Marco Antonio 😎
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&duration=2000&pause=1000&multiline=true&random=false&width=435&lines=26+years+old;Software+Engineer)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=435&lines=28+years+old;Software+Engineer)](https://git.io/typing-svg)
 
 <br/>
 
