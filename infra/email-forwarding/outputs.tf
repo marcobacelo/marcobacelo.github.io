@@ -13,6 +13,27 @@ output "forward_to_address" {
   value       = var.forward_to_address
 }
 
+output "ses_domain_identity_arn" {
+  description = "ARN da identidade SES do dominio, quando gerenciada por esta stack."
+  value       = var.manage_ses_domain_identity ? aws_sesv2_email_identity.domain[0].arn : null
+}
+
+output "ses_dkim_cname_records" {
+  description = "CNAMEs DKIM para publicar no DNS quando a identidade SES for criada por esta stack."
+  value = var.manage_ses_domain_identity ? [
+    for token in aws_sesv2_email_identity.domain[0].dkim_signing_attributes[0].tokens : {
+      name  = "${token}._domainkey.${var.domain_name}"
+      type  = "CNAME"
+      value = "${token}.dkim.amazonses.com"
+    }
+  ] : []
+}
+
+output "ses_verified_for_sending_status" {
+  description = "Status de verificacao da identidade SES para envio, quando gerenciada por esta stack."
+  value       = var.manage_ses_domain_identity ? aws_sesv2_email_identity.domain[0].verified_for_sending_status : null
+}
+
 output "ses_inbound_mx_record" {
   description = "Registro MX que deve ser criado no DNS do dominio, por exemplo no registro.br."
   value = {

@@ -34,6 +34,7 @@ env:
   TF_INPUT: "false"
   TF_VAR_aws_region: ${{ vars.AWS_REGION || 'us-east-1' }}
   TF_VAR_forward_to_address: ${{ vars.CONTACT_FORWARD_TO_EMAIL || 'marcobacelo90@gmail.com' }}
+  TF_VAR_manage_ses_domain_identity: ${{ vars.MANAGE_SES_DOMAIN_IDENTITY || 'true' }}
 
 jobs:
   terraform:

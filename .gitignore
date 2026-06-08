@@ -13,6 +13,9 @@ dist/
 *.tfstate
 *.tfstate.*
 *.tfplan
+backend.hcl
+terraform.tfvars
+terraform.tfvars.json
 crash.log
 crash.*.log
 override.tf

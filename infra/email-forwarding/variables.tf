@@ -22,6 +22,12 @@ variable "domain_name" {
   default     = "royalsoftwareengineering.com.br"
 }
 
+variable "manage_ses_domain_identity" {
+  description = "Cria a identidade SES do dominio nesta stack. Em conta greenfield deve ser true. Se a identidade ja existir em outro state, importe antes do apply ou mude para false."
+  type        = bool
+  default     = true
+}
+
 variable "contact_recipient" {
   description = "Endereco publico recebido pelo SES inbound."
   type        = string

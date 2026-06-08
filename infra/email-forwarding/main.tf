@@ -1,5 +1,14 @@
 data "aws_caller_identity" "current" {}
 
+resource "aws_sesv2_email_identity" "domain" {
+  count          = var.manage_ses_domain_identity ? 1 : 0
+  email_identity = var.domain_name
+
+  dkim_signing_attributes {
+    next_signing_key_length = "RSA_2048_BIT"
+  }
+}
+
 resource "aws_s3_bucket" "inbound_email" {
   bucket = "${local.resource_prefix}-inbound-email-${local.account_id}"
 }
