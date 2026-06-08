@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://royalsoftwareengineering.com.br",
+  site: "https://marcobacelo.github.io",
   base: "/",
   integrations: [react()],
   vite: {

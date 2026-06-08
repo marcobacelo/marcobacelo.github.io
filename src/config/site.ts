@@ -3,7 +3,7 @@ export const site = {
   shortName: "Royal SE",
   tagline:
     "Engenharia de software com foco em produto, nuvem e entrega contínua.",
-  url: "https://royalsoftwareengineering.com.br",
+  url: "https://marcobacelo.github.io",
   locale: "pt-BR",
   email: "contato@royalsoftwareengineering.com.br",
   github: "https://github.com/RoyalSoftwareEngineering",
