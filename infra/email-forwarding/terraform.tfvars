@@ -8,3 +8,5 @@ forward_to_address   = "marcobacelo90@gmail.com"
 
 inbound_email_retention_days = 90
 activate_receipt_rule_set    = true
+
+create_github_oidc_provider = false

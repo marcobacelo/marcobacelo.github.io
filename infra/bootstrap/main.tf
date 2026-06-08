@@ -65,7 +65,8 @@ data "aws_iam_policy_document" "pipeline_assume_role" {
       test     = "StringLike"
       variable = "token.actions.githubusercontent.com:sub"
       values = [
-        "repo:${local.repository_slug}:ref:refs/heads/main",
+        "repo:${local.repository_slug}:ref:refs/heads/*",
+        "repo:${local.repository_slug}:ref:refs/tags/*",
         "repo:${local.repository_slug}:pull_request",
       ]
     }
