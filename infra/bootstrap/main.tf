@@ -142,6 +142,20 @@ data "aws_iam_policy_document" "pipeline_permissions" {
   }
 
   statement {
+    sid    = "ReadCloudWatchLogsForTerraformRefresh"
+    effect = "Allow"
+    actions = [
+      "logs:DescribeLogGroups",
+    ]
+    resources = ["*"]
+    condition {
+      test     = "StringEquals"
+      variable = "aws:RequestedRegion"
+      values   = [var.aws_region]
+    }
+  }
+
+  statement {
     sid    = "ManageLambdaRole"
     effect = "Allow"
     actions = [
@@ -153,8 +167,12 @@ data "aws_iam_policy_document" "pipeline_permissions" {
       "iam:PutRolePolicy",
       "iam:GetRolePolicy",
       "iam:DeleteRolePolicy",
+      "iam:ListAttachedRolePolicies",
+      "iam:ListInstanceProfilesForRole",
       "iam:ListRolePolicies",
+      "iam:ListRoleTags",
       "iam:PassRole",
+      "iam:UpdateAssumeRolePolicy",
     ]
     resources = [
       "arn:aws:iam::${local.account_id}:role/${local.lambda_role_name}",

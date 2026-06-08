@@ -15,6 +15,12 @@ contato@royalsoftwareengineering.com.br
 
 Esta stack cria a identidade SES do dominio por padrao (`manage_ses_domain_identity=true`), para funcionar em uma conta AWS greenfield.
 
+## Ownership
+
+O repo `marcobacelo.github.io` e o owner da identidade SES `royalsoftwareengineering.com.br`, dos registros DKIM/MX e do forwarding institucional.
+
+Projetos consumidores, como a Whiskeria, nao devem criar a identidade SES. Eles devem apenas usar `email_provider=ses`, `email_from=noreply@royalsoftwareengineering.com.br` e permissao runtime `ses:SendEmail`/`ses:SendRawEmail`.
+
 Se a identidade SES `royalsoftwareengineering.com.br` ja existir na mesma conta/regiao e estiver gerenciada por outro Terraform state, o primeiro `apply` vai falhar com conflito de recurso existente. Nesse caso, escolha uma das opcoes:
 
 1. Importar a identidade para esta stack:
@@ -28,6 +34,20 @@ terraform import 'aws_sesv2_email_identity.domain[0]' royalsoftwareengineering.c
 ```hcl
 manage_ses_domain_identity = false
 ```
+
+## Migracao da Whiskeria para este repo
+
+Quando a identidade SES ainda estiver no state da Whiskeria:
+
+1. Aplicar a infra da Whiskeria com o `removed` block `destroy=false`, para remover a identidade do state sem destruir o recurso AWS.
+2. Neste repo, importar a identidade existente:
+
+```bash
+cd infra/email-forwarding
+terraform import 'aws_sesv2_email_identity.domain[0]' royalsoftwareengineering.com.br
+```
+
+3. Rodar `terraform plan` e confirmar que a identidade SES nao sera recriada nem destruida.
 
 ## Recursos criados
 
