@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --color-royal-950: #0a0f1f;
+  --color-royal-900: #111827;
+  --color-royal-800: #1e293b;
+  --color-royal-700: #334155;
+  --color-royal-accent: #6366f1;
+  --color-royal-accent-light: #818cf8;
+  --color-royal-gold: #c9a227;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-royal-950 text-slate-100 antialiased;
+}

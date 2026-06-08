@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { site } from "../config/site";
+---
+
+<Layout
+  title="Sobre"
+  description="Conheça a Royal Software Engineering: missão, valores e forma de trabalho."
+>
+  <section class="mx-auto max-w-3xl px-4 py-16 sm:px-6 sm:py-20">
+    <h1 class="text-3xl font-bold text-white sm:text-4xl">Sobre nós</h1>
+    <p class="mt-6 text-lg leading-relaxed text-slate-300">
+      A <strong class="text-white">{site.name}</strong> baseia-se na convicção de que software de
+      qualidade não precisa ser inacessível, seja em custo ou em complexidade desnecessária.
+    </p>
+    <p class="mt-4 leading-relaxed text-slate-400">
+      Trabalhamos com tecnologias modernas (TypeScript, Node, React, AWS), contratos de API claros,
+      testes automatizados e implantação contínua. Preferimos decisões documentadas e evolutivas a
+      mudanças abruptas que ninguém consegue operar.
+    </p>
+
+    <h2 class="mt-12 text-xl font-semibold text-white">Como trabalhamos</h2>
+    <ul class="mt-4 space-y-3 text-slate-400">
+      <li class="flex gap-3">
+        <span class="text-royal-gold" aria-hidden="true">◆</span>
+        <span>Produto em primeiro lugar: código alinhado a objetivos de negócio mensuráveis.</span>
+      </li>
+      <li class="flex gap-3">
+        <span class="text-royal-gold" aria-hidden="true">◆</span>
+        <span>Transparência: infraestrutura e integração contínua visíveis, sem caixas-pretas.</span>
+      </li>
+      <li class="flex gap-3">
+        <span class="text-royal-gold" aria-hidden="true">◆</span>
+        <span>
+          Segurança operacional: privilégio mínimo, credenciais gerenciadas e reversão planejada.
+        </span>
+      </li>
+      <li class="flex gap-3">
+        <span class="text-royal-gold" aria-hidden="true">◆</span>
+        <span>Nuvem dimensionada de acordo com o estágio real do produto.</span>
+      </li>
+    </ul>
+  </section>
+</Layout>

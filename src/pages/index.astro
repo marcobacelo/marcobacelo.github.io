@@ -1,0 +1,62 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { site, services } from "../config/site";
+---
+
+<Layout title="Início" description={site.tagline}>
+  <section class="relative overflow-hidden border-b border-slate-800">
+    <div
+      class="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--color-royal-accent)_0%,_transparent_55%)] opacity-20"
+      aria-hidden="true"
+    />
+    <div class="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
+      <p class="text-sm font-semibold uppercase tracking-widest text-royal-accent-light">
+        Royal Software Engineering
+      </p>
+      <h1 class="mt-4 max-w-3xl text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+        Software que gera valor, com engenharia responsável e custos conscientes.
+      </h1>
+      <p class="mt-6 max-w-2xl text-lg text-slate-300">
+        Desenvolvemos produtos digitais, APIs e infraestrutura em nuvem. Da concepção à produção,
+        com qualidade, segurança e pipelines que permitem evoluir com previsibilidade.
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a
+          href="/contato"
+          class="rounded-lg bg-royal-accent px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-900/40 transition hover:bg-royal-accent-light"
+        >
+          Solicitar contato
+        </a>
+        <a
+          href="/projetos"
+          class="rounded-lg border border-slate-600 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-slate-400 hover:text-white"
+        >
+          Ver projetos
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+    <h2 class="text-2xl font-bold text-white sm:text-3xl">O que fazemos</h2>
+    <p class="mt-3 max-w-2xl text-slate-400">
+      Serviços voltados a equipes que precisam de software confiável, não apenas apresentações de
+      arquitetura.
+    </p>
+    <div class="mt-10 grid gap-6 sm:grid-cols-3">
+      {
+        services.map((s) => (
+          <article class="rounded-xl border border-slate-800 bg-royal-900/50 p-6 transition hover:border-slate-700">
+            <h3 class="text-lg font-semibold text-white">{s.title}</h3>
+            <p class="mt-2 text-sm leading-relaxed text-slate-400">{s.description}</p>
+          </article>
+        ))
+      }
+    </div>
+    <p class="mt-8">
+      <a href="/servicos" class="text-sm font-medium text-royal-accent-light hover:underline">
+        Conheça todos os serviços
+      </a>
+    </p>
+  </section>
+</Layout>

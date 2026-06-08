@@ -1,0 +1,50 @@
+---
+import { nav, site } from "../config/site";
+import MobileNav from "./react/MobileNav";
+---
+
+<header class="relative sticky top-0 z-50 border-b border-slate-800/80 bg-royal-950/90 backdrop-blur-md">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
+    <a href="/" class="group flex items-center gap-2">
+      <span
+        class="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-royal-accent to-indigo-800 text-sm font-bold text-white shadow-lg shadow-indigo-900/40"
+        aria-hidden="true"
+      >
+        R
+      </span>
+      <span class="flex flex-col leading-tight">
+        <span class="text-sm font-semibold tracking-wide text-white group-hover:text-royal-accent-light">
+          {site.shortName}
+        </span>
+        <span class="hidden text-xs text-slate-400 sm:block">Software Engineering</span>
+      </span>
+    </a>
+
+    <nav class="hidden items-center gap-1 md:flex" aria-label="Principal">
+      {
+        nav.map((item) => (
+          <a
+            href={item.href}
+            class:list={[
+              "rounded-lg px-3 py-2 text-sm font-medium transition-colors",
+              Astro.url.pathname === item.href
+                ? "bg-royal-800 text-white"
+                : "text-slate-300 hover:bg-royal-900 hover:text-white",
+            ]}
+          >
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+
+    <a
+      href="/contato"
+      class="hidden rounded-lg bg-royal-accent px-4 py-2 text-sm font-semibold text-white shadow-md shadow-indigo-900/30 transition hover:bg-royal-accent-light md:inline-block"
+    >
+      Fale conosco
+    </a>
+
+    <MobileNav client:load currentPath={Astro.url.pathname} />
+  </div>
+</header>

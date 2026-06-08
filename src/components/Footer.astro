@@ -1,0 +1,50 @@
+---
+import { nav, site } from "../config/site";
+const year = new Date().getFullYear();
+---
+
+<footer class="border-t border-slate-800 bg-royal-900">
+  <div class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+    <div class="grid gap-8 md:grid-cols-3">
+      <div>
+        <p class="text-lg font-semibold text-white">{site.name}</p>
+        <p class="mt-2 max-w-xs text-sm text-slate-400">{site.tagline}</p>
+      </div>
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Navegação</p>
+        <ul class="mt-3 space-y-2">
+          {
+            nav.map((item) => (
+              <li>
+                <a href={item.href} class="text-sm text-slate-300 hover:text-white">
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-wider text-slate-500">Contato</p>
+        <p class="mt-3">
+          <a href={`mailto:${site.email}`} class="text-sm text-royal-accent-light hover:underline">
+            {site.email}
+          </a>
+        </p>
+        <p class="mt-2">
+          <a
+            href={site.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm text-slate-300 hover:text-white"
+          >
+            GitHub
+          </a>
+        </p>
+      </div>
+    </div>
+    <p class="mt-10 border-t border-slate-800 pt-6 text-center text-xs text-slate-500">
+      © {year} {site.name}. Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
