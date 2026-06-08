@@ -8,6 +8,18 @@ dist/
 .env
 .env.*
 
+# terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
 # logs
 *.log
 npm-debug.log*
