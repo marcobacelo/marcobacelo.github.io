@@ -6,7 +6,7 @@ Ela cria:
 
 - Bucket S3 remoto para Terraform state.
 - Provider OIDC do GitHub, quando `create_github_oidc_provider=true`.
-- Role IAM `rse-site-prod-email-forwarding-terraform` assumida pelo GitHub Actions.
+- Role IAM `rse-prod-gha-terraform` assumida pelo GitHub Actions.
 - Policy minima para a role aplicar a stack `infra/email-forwarding`.
 
 ## Execucao local
@@ -27,6 +27,14 @@ Depois configure no GitHub as repository variables retornadas pelos outputs:
 
 ```bash
 terraform output github_repository_variables
+```
+
+Valores esperados apos a padronizacao:
+
+```text
+AWS_ROLE_TO_ASSUME=arn:aws:iam::<account-id>:role/rse-prod-gha-terraform
+TF_STATE_BUCKET=rse-prod-tfstate-<account-id>
+TF_STATE_KEY=rse/prod/email-forwarding/terraform.tfstate
 ```
 
 ## Conta AWS que ja possui OIDC

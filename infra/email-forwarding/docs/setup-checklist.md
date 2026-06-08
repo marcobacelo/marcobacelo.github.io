@@ -8,6 +8,7 @@ Use este checklist antes do primeiro `terraform apply`.
 - [ ] Confirmar output `aws_role_to_assume`.
 - [ ] Confirmar output `terraform_state_bucket`.
 - [ ] Configurar repository variables no GitHub.
+- [ ] Se ja havia state remoto antigo, migrar/copy state antes de alterar `TF_STATE_BUCKET` e `TF_STATE_KEY`.
 
 ## 2. SES
 
@@ -22,9 +23,9 @@ Configure em GitHub -> Settings -> Secrets and variables -> Actions -> Variables
 
 ```text
 AWS_REGION=us-east-1
-AWS_ROLE_TO_ASSUME=arn:aws:iam::<account-id>:role/rse-site-prod-email-forwarding-terraform
+AWS_ROLE_TO_ASSUME=arn:aws:iam::<account-id>:role/rse-prod-gha-terraform
 TF_STATE_BUCKET=<bucket-s3-do-terraform-state>
-TF_STATE_KEY=royal-software-engineering-site/prod/email-forwarding/terraform.tfstate
+TF_STATE_KEY=rse/prod/email-forwarding/terraform.tfstate
 CONTACT_FORWARD_TO_EMAIL=marcobacelo90@gmail.com
 MANAGE_SES_DOMAIN_IDENTITY=true
 ```
@@ -34,6 +35,7 @@ MANAGE_SES_DOMAIN_IDENTITY=true
 - [ ] Abrir o workflow `Terraform Email Forwarding`.
 - [ ] Executar `workflow_dispatch` com `action=plan`.
 - [ ] Revisar recursos planejados.
+- [ ] Confirmar explicitamente se replacements de S3/Lambda/IAM/SES rule set sao esperados.
 - [ ] Executar `workflow_dispatch` com `action=apply`.
 - [ ] Copiar o output `ses_dkim_cname_records`, se a stack gerencia a identidade SES.
 - [ ] Criar os CNAMEs DKIM no registro.br.

@@ -103,6 +103,17 @@ terraform apply -var-file=terraform.tfvars
 
 Use `terraform.tfvars.example` como base para um `terraform.tfvars` local nao versionado.
 
+## Migracao de nomes `rse-prod-*`
+
+Os nomes fisicos foram padronizados para `rse-prod-*`. Em uma conta que ja possui recursos antigos (`rse-site-*` ou `royal-software-engineering-site-*`), nao execute `apply` sem revisar o `plan`.
+
+Antes de aplicar:
+
+1. Migrar ou copiar o state remoto para `TF_STATE_BUCKET=rse-prod-tfstate-<account-id>` e `TF_STATE_KEY=rse/prod/email-forwarding/terraform.tfstate`, se a mudanca de bucket/key for adotada.
+2. Rodar `terraform plan` e identificar replacements de bucket, Lambda, IAM role e SES receipt rule set.
+3. Para recursos com dados, como bucket S3 de e-mails recebidos, decidir se as mensagens antigas serao copiadas ou mantidas em bucket legado por uma janela de retencao.
+4. Aplicar primeiro o bootstrap, atualizar GitHub variables, e so entao aplicar a stack de email.
+
 ## GitHub Actions
 
 O workflow `.github/workflows/terraform-email-forwarding.yml` executa `fmt`, `validate`, `plan` e, manualmente, `apply`.
@@ -115,9 +126,9 @@ Configure no GitHub:
 
 ```text
 AWS_REGION=us-east-1
-AWS_ROLE_TO_ASSUME=arn:aws:iam::<account-id>:role/rse-site-prod-email-forwarding-terraform
+AWS_ROLE_TO_ASSUME=arn:aws:iam::<account-id>:role/rse-prod-gha-terraform
 TF_STATE_BUCKET=<bucket-s3-do-terraform-state>
-TF_STATE_KEY=royal-software-engineering-site/prod/email-forwarding/terraform.tfstate
+TF_STATE_KEY=rse/prod/email-forwarding/terraform.tfstate
 CONTACT_FORWARD_TO_EMAIL=marcobacelo90@gmail.com
 MANAGE_SES_DOMAIN_IDENTITY=true
 ```

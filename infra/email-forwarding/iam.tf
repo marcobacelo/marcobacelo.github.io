@@ -12,7 +12,7 @@ data "aws_iam_policy_document" "lambda_assume_role" {
 }
 
 resource "aws_iam_role" "forward_contact_email" {
-  name               = "${local.resource_prefix}-forward-contact-email"
+  name               = local.email_forwarder_name
   assume_role_policy = data.aws_iam_policy_document.lambda_assume_role.json
 }
 
@@ -64,7 +64,7 @@ data "aws_iam_policy_document" "forward_contact_email" {
 }
 
 resource "aws_iam_role_policy" "forward_contact_email" {
-  name   = "${local.resource_prefix}-forward-contact-email"
+  name   = local.email_forwarder_name
   role   = aws_iam_role.forward_contact_email.id
   policy = data.aws_iam_policy_document.forward_contact_email.json
 }

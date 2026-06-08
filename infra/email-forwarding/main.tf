@@ -10,7 +10,7 @@ resource "aws_sesv2_email_identity" "domain" {
 }
 
 resource "aws_s3_bucket" "inbound_email" {
-  bucket = "${local.resource_prefix}-inbound-email-${local.account_id}"
+  bucket = local.email_bucket_name
 }
 
 resource "aws_s3_bucket_public_access_block" "inbound_email" {
@@ -105,12 +105,12 @@ data "archive_file" "forward_contact_email" {
 }
 
 resource "aws_cloudwatch_log_group" "forward_contact_email" {
-  name              = "/aws/lambda/${local.resource_prefix}-forward-contact-email"
+  name              = "/aws/lambda/${local.email_forwarder_name}"
   retention_in_days = 30
 }
 
 resource "aws_lambda_function" "forward_contact_email" {
-  function_name    = "${local.resource_prefix}-forward-contact-email"
+  function_name    = local.email_forwarder_name
   description      = "Encaminha e-mails recebidos em ${var.contact_recipient} para ${var.forward_to_address}."
   role             = aws_iam_role.forward_contact_email.arn
   runtime          = "python3.12"

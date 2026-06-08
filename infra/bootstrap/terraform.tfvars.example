@@ -4,7 +4,7 @@ environment = "prod"
 github_owner = "marcobacelo"
 github_repo  = "marcobacelo.github.io"
 
-pipeline_role_name = "rse-site-prod-email-forwarding-terraform"
+pipeline_role_name = "rse-prod-gha-terraform"
 
 # Em conta AWS completamente nova: true.
 # Se a conta ja tem o provider OIDC do GitHub criado por outra infra: false.

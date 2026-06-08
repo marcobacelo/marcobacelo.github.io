@@ -1,5 +1,5 @@
 bucket       = "SEU_BUCKET_DE_TERRAFORM_STATE"
-key          = "royal-software-engineering-site/prod/email-forwarding/terraform.tfstate"
+key          = "rse/prod/email-forwarding/terraform.tfstate"
 region       = "us-east-1"
 encrypt      = true
 use_lockfile = true

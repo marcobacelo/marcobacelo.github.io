@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "project_name" {
   description = "Nome base usado em recursos AWS."
   type        = string
-  default     = "royal-software-engineering-site"
+  default     = "rse"
 }
 
 variable "environment" {

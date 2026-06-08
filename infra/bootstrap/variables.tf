@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "project_name" {
   description = "Nome base dos recursos de bootstrap."
   type        = string
-  default     = "royal-software-engineering-site"
+  default     = "rse"
 }
 
 variable "environment" {
@@ -29,7 +29,7 @@ variable "github_repo" {
 }
 
 variable "terraform_state_bucket_name" {
-  description = "Nome do bucket S3 de state. Vazio usa rse-site-tf-state-<account-id>."
+  description = "Nome do bucket S3 de state. Vazio usa rse-prod-tfstate-<account-id>."
   type        = string
   default     = ""
 }
@@ -37,13 +37,13 @@ variable "terraform_state_bucket_name" {
 variable "terraform_state_key" {
   description = "Key do state remoto da stack principal."
   type        = string
-  default     = "royal-software-engineering-site/prod/email-forwarding/terraform.tfstate"
+  default     = "rse/prod/email-forwarding/terraform.tfstate"
 }
 
 variable "pipeline_role_name" {
   description = "Nome da role OIDC assumida pelo GitHub Actions."
   type        = string
-  default     = "rse-site-prod-email-forwarding-terraform"
+  default     = "rse-prod-gha-terraform"
 }
 
 variable "create_github_oidc_provider" {
