@@ -68,3 +68,27 @@ variable "activate_receipt_rule_set" {
   type        = bool
   default     = true
 }
+
+variable "email_bucket_name_override" {
+  description = "Nome fisico opcional do bucket inbound. Use apenas para adotar recursos legados sem replacement."
+  type        = string
+  default     = null
+}
+
+variable "email_forwarder_name_override" {
+  description = "Nome fisico opcional da Lambda/IAM role de forwarding. Use apenas para adotar recursos legados sem replacement."
+  type        = string
+  default     = null
+}
+
+variable "receipt_rule_name_override" {
+  description = "Nome fisico opcional da SES receipt rule. Use apenas para adotar recursos legados sem replacement."
+  type        = string
+  default     = null
+}
+
+variable "rule_set_name_override" {
+  description = "Nome fisico opcional do SES receipt rule set. Use apenas para adotar recursos legados sem replacement."
+  type        = string
+  default     = null
+}

@@ -114,6 +114,8 @@ Antes de aplicar:
 3. Para recursos com dados, como bucket S3 de e-mails recebidos, decidir se as mensagens antigas serao copiadas ou mantidas em bucket legado por uma janela de retencao.
 4. Aplicar primeiro o bootstrap, atualizar GitHub variables, e so entao aplicar a stack de email.
 
+Na migracao executada em 2026-06-09, os recursos antigos foram recriados com nomes `rse-prod-*` apos backup dos buckets. O bucket inbound antigo e o bucket de state antigo foram removidos depois da validacao.
+
 ## GitHub Actions
 
 O workflow `.github/workflows/terraform-email-forwarding.yml` executa `fmt`, `validate`, `plan` e, manualmente, `apply`.
@@ -149,6 +151,41 @@ Nenhum secret AWS e necessario se OIDC estiver configurado. Evite access keys lo
 8. Confirmar objeto no bucket S3.
 9. Confirmar recebimento em `marcobacelo90@gmail.com`.
 10. Verificar logs da Lambda se nao chegar.
+
+## Estado atual de DNS, nomes e testes
+
+Validacao em 2026-06-08 e migracao final em 2026-06-09:
+
+- DKIM da identidade SES `royalsoftwareengineering.com.br` esta verificado.
+- `marcobacelo90@gmail.com` esta verificado no SES, o que permite teste enquanto a conta ainda esta em sandbox.
+- GitHub Pages do dominio raiz esta resolvendo para os quatro IPs oficiais do GitHub Pages.
+- `www.royalsoftwareengineering.com.br` esta resolvendo para `marcobacelo.github.io`.
+- DNS de email publicado no Registro.br:
+
+```text
+royalsoftwareengineering.com.br. MX 10 inbound-smtp.us-east-1.amazonaws.com
+royalsoftwareengineering.com.br. TXT "v=spf1 include:amazonses.com ~all"
+_dmarc.royalsoftwareengineering.com.br. TXT "v=DMARC1; p=none; rua=mailto:marcobacelo90@gmail.com"
+```
+
+- Recursos ativos:
+  - State: `s3://rse-prod-tfstate-058495187765/rse/prod/email-forwarding/terraform.tfstate`
+  - Bucket inbound: `rse-prod-email-inbound-058495187765`
+  - Lambda/IAM role: `rse-prod-email-forwarder`
+  - SES rule set: `rse-prod-email-inbound`
+  - SES receipt rule: `rse-prod-contact-forward`
+- Recursos legados removidos apos backup:
+  - `rse-site-tf-state-058495187765`
+  - `royal-software-engineering-site-prod-inbound-email-058495187765`
+  - `rse-site-prod-email-forwarding-terraform`
+  - `royal-software-engineering-site-prod-forward-contact-email`
+- Backups de migracao preservados em:
+  - `s3://rse-prod-tfstate-058495187765/backups/royal-software-engineering-site-prod-inbound-email-058495187765/20260609T120624Z/`
+  - `s3://rse-prod-tfstate-058495187765/backups/rse-site-tf-state-058495187765/20260609T120624Z/`
+- Smoke final aprovado:
+  - `MessageId=0100019eac4baab6-a2b4c2b7-cb4f-4734-818c-1dc28dedf6e2-000000`
+  - Objeto S3 `contact/s411ftle7dhkv1ppertuvj2tee9304sj5hsell01`
+  - Log stream Lambda `2026/06/09/[$LATEST]bbac22718e614d2d97585609b515da1a` sem `ERROR`.
 
 ## Riscos e trade-offs
 
