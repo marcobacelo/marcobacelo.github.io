@@ -13,8 +13,27 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   @apply bg-royal-950 text-slate-100 antialiased;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+.break-anywhere {
+  overflow-wrap: anywhere;
+}
+
+@media (max-height: 700px) and (orientation: landscape) {
+  .compact-vertical {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .compact-vertical-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
 }

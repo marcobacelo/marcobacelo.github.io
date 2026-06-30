@@ -21,7 +21,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label htmlFor="name" className="mb-1 block text-sm font-medium text-slate-300">
+        <label htmlFor="name" className="mb-2 block text-sm font-medium text-slate-300">
           Nome
         </label>
         <input
@@ -30,11 +30,11 @@ export default function ContactForm() {
           required
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="w-full rounded-lg border border-slate-700 bg-royal-900 px-4 py-2.5 text-white outline-none ring-royal-accent focus:ring-2"
+          className="w-full rounded-lg border border-slate-700 bg-royal-900 px-4 py-3 text-base text-white outline-none ring-royal-accent focus:ring-2"
         />
       </div>
       <div>
-        <label htmlFor="email" className="mb-1 block text-sm font-medium text-slate-300">
+        <label htmlFor="email" className="mb-2 block text-sm font-medium text-slate-300">
           E-mail
         </label>
         <input
@@ -44,11 +44,11 @@ export default function ContactForm() {
           required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="w-full rounded-lg border border-slate-700 bg-royal-900 px-4 py-2.5 text-white outline-none ring-royal-accent focus:ring-2"
+          className="w-full rounded-lg border border-slate-700 bg-royal-900 px-4 py-3 text-base text-white outline-none ring-royal-accent focus:ring-2"
         />
       </div>
       <div>
-        <label htmlFor="message" className="mb-1 block text-sm font-medium text-slate-300">
+        <label htmlFor="message" className="mb-2 block text-sm font-medium text-slate-300">
           Mensagem
         </label>
         <textarea
@@ -58,12 +58,12 @@ export default function ContactForm() {
           rows={5}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="w-full resize-y rounded-lg border border-slate-700 bg-royal-900 px-4 py-2.5 text-white outline-none ring-royal-accent focus:ring-2"
+          className="min-h-[120px] w-full resize-y rounded-lg border border-slate-700 bg-royal-900 px-4 py-3 text-base text-white outline-none ring-royal-accent focus:ring-2"
         />
       </div>
       <button
         type="submit"
-        className="w-full rounded-lg bg-royal-accent px-4 py-3 text-sm font-semibold text-white transition hover:bg-royal-accent-light sm:w-auto"
+        className="inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-royal-accent px-4 py-3 text-sm font-semibold text-white transition hover:bg-royal-accent-light sm:w-auto"
       >
         Enviar mensagem
       </button>
