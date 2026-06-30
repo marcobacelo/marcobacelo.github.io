@@ -43,4 +43,12 @@ export const projects = [
     tags: ["NestJS", "Next.js", "AWS", "DynamoDB"],
     url: "https://whiskeria.niteroi.royalsoftwareengineering.com.br",
   },
+  {
+    name: "Commit Pattern CLI",
+    description:
+      "CLI em Rust para criar commits padronizados com Conventional Commits, emojis, validação de mensagens e hooks Git.",
+    tags: ["Rust", "CLI", "Git"],
+    url: "https://github.com/marcobacelo/commit-creator",
+    linkLabel: "Ver no GitHub",
+  },
 ] as const;
